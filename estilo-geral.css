@@ -11,4 +11,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Rubik";
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(./fonts/Rubik-VariableFont_wght.ttf),
+         url(./fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
