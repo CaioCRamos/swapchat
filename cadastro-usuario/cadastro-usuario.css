@@ -1,13 +1,68 @@
+body{
+    flex-direction: column;
+
+}
+
+div{
+    border: 1px solid #FFFFFF;
+}
+
+.cabecario{
+    display: flex;
+}
+
+.caixa__maior{
+    justify-content:center;
+    width: 700px;
+    height: 500px;
+    background: #32236D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nome__principal{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+    display:flex;
+    width:350px;
+    text-align: left;
+
+}
+
+.voltar{
+   width: 350px;
+   text-align: right; 
+
+}
+
+.form--error{
+    display:none;
+        
+}
+
+.botao__continuar{
+    background: #FF276F;
+    border-radius: 6px;
+    
+}
+
+
+ /*
 .nome__principal{
     position: absolute;
     width: 193px;
     height: 50px;
-    left: 300px;
-    top: 170px;
+    left: 330px;
+    top: 30px;
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 30px;
     line-height: 50px;
     color: #FFFFFF;
     }
@@ -16,12 +71,12 @@
     position: absolute;
     width: 43px;
     height: 19px;
-    left: 1239px;
-    top: 170px;
+    left: 970px;
+    top: 40px;
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
     text-align: right;
     text-decoration-line: underline;
@@ -34,11 +89,11 @@
     width: 226px;
     height: 28px;
     left: 478px;
-    top: 100px;
+    top: 120px;
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 15px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.6);
     
@@ -165,8 +220,8 @@
     
     .caixa__maior{
     position: center;
-    width: 1124px;
-    height: 765px;
+    width: 700px;
+    height: 500px;
     left: 158px;
     top: 329px;
     background: #32236D;
