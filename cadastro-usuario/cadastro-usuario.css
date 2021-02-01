@@ -1,0 +1,208 @@
+.nome__principal{
+    position: absolute;
+    width: 193px;
+    height: 50px;
+    left: 300px;
+    top: 170px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    }
+    
+    .voltar{
+    position: absolute;
+    width: 43px;
+    height: 19px;
+    left: 1239px;
+    top: 170px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    
+    }
+    
+    .titulo{
+    position: absolute;
+    width: 226px;
+    height: 28px;
+    left: 478px;
+    top: 100px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+    
+    }
+    
+    .detalhe__nome{
+    position: absolute;
+    width: 112px;
+    height: 28px;
+    left: -150px;
+    top: 5px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    }
+    
+    #caixa_nome_input{
+    position: absolute;
+    width: 279px;
+    height: 40px;
+    left: 500px;
+    top: 200px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    }
+    
+    .detalhe__celular{
+    position: absolute;
+    width: 78px;
+    height: 28px;
+    left: -150px;
+    top: 10px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    }
+    
+    #caixa_celular_input{
+    position: absolute;
+    width: 279px;
+    height: 40px;
+    left: 700px;
+    top: 550px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    }
+    
+    .detalhe__senha{
+    position: absolute;
+    width: 71px;
+    height: 28px;
+    left: -170px;
+    top: 5px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    }
+    
+    #caixa_senha_input{
+    position: absolute;
+    width: 279px;
+    height: 40px;
+    left: 800px;
+    top: 600px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    }
+    
+    .pergunta_segurança_input{
+    position: absolute;
+    width: 261px;
+    height: 28px;
+    left: 580px;
+    top: 700px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    
+    }
+    #caixa_pergunta{
+    position: absolute;
+    width: 483px;
+    height: 40px;
+    left: 600px;
+    top: 750px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    }
+    #caixa_resposta_input{
+    position: absolute;
+    width: 483px;
+    height: 40px;
+    left: 600px;
+    top: 800px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    }
+    
+    input{
+    position: absolute;
+    width: 281px;
+    height:40px ;
+    border: 1px;
+    }
+    .detalhe{
+    position: center;
+    width: 281px;
+    height:40px ;
+    border: 1px;
+    }
+    
+    .caixa__maior{
+    position: center;
+    width: 1124px;
+    height: 765px;
+    left: 158px;
+    top: 329px;
+    background: #32236D;
+    border-radius: 20px;
+    }
+    
+    .botao__continuar{
+    position: absolute;
+    width: 154px;
+    height: 50px;
+    left: 750px;
+    top: 900px;
+    background: #FF276F;
+    border-radius: 6px;
+    color: #FFFFFF;
+    }
+    
+    /*.form--error-text-form--error{
+        display:none;
+        color: #ff7a7a;
+        font-size: 0.7rem;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+        
+    }
+    
+    .form__input.error
+    .form--error{
+        display: block;
+    }
+    
+    .form__input.error
+    .cadastro{
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        border: 2px #ff7a7a solid;
+    }
+    
+    
