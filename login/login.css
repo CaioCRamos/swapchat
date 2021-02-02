@@ -1,3 +1,75 @@
-h1 {
-    color: white;
+div{
+    border: 1px red solid;
 }
+
+.logo{
+    text-align: center;
+}
+
+.form{
+   background-color: #32236D;
+   border-radius: 20px;
+   width: 70vh;
+   height: 40vh;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.login-topo{
+    text-align: center;
+    opacity: 50%;
+}
+
+.login-input{
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.esqueciSenha{
+    opacity: 50%;
+    color: white;
+    margin: auto;
+}
+
+.form--error{
+    margin: auto;
+}
+
+.botoes{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro{
+    width: 20%;
+    margin-top: 0.5rem;
+    background-color: #32236D;
+    color: #fff;
+    text-transform: uppercase;
+    height: 3rem;
+    border-radius: 7px;
+    border:none;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.entrar{
+    width: 20%;
+    margin-top: 0.5rem;
+    background-color:#FF276F;
+    color: #fff;
+    text-transform: uppercase;
+    height: 3rem;
+    border-radius: 7px;
+    border:none;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+

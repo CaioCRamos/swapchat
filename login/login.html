@@ -8,6 +8,31 @@
     <title>Login</title>
 </head>
 <body>
-    <h1>Tela de Login</h1>
+    <div class="geral">
+        <div class="logo">
+            <h1>Swapchat</h1>
+        </div><br>
+        <div class="login">
+            <form action="#" class="form">
+                <p class="login-topo">Para acessar,use seu celular</p>
+                <div class="login-input" id="login-email">
+                    <p class="ident">Celular</p>
+                    <input type="email" placeholder="Digite seu celular com DDD" class="login--field" required>
+                </div>
+                <div class="login-input" id="login-senha">
+                    <p class="ident">Senha</p>
+                    <input type="password" placeholder="Digite sua senha" class="login--field" required>
+                </div>
+                <a class="esqueciSenha" href="https://www.google.com.br/webhp?tab=rw&authuser=0">Esqueci minha senha</a><br>
+                <p class="form--error-text form--error">Seu celular ou senha estão incorretos.</p>
+                <p class="form--error-text form--error">Tente novamente.</p>
+                <div class="botoes">
+                    <button class="cadastro">CRIAR CONTA</button>
+                    <button class="entrar">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./login.js"></script>
 </body>
 </html>
