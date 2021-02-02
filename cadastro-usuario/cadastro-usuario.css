@@ -1,18 +1,15 @@
-body{
+body {
     flex-direction: column;
-
 }
 
-div{
-    border: 1px solid #FFFFFF;
-}
 
-.cabecario{
+
+.cabecario {
     display: flex;
 }
 
-.caixa__maior{
-    justify-content:center;
+.caixa__maior {
+    justify-content: center;
     width: 700px;
     height: 500px;
     background: #32236D;
@@ -20,39 +17,97 @@ div{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.nome__principal{
+.nome__principal {
     font-weight: bold;
     font-size: 30px;
     line-height: 50px;
     color: #FFFFFF;
-    display:flex;
-    width:350px;
+    display: flex;
+    width: 350px;
     text-align: left;
-
 }
 
-.voltar{
-   width: 350px;
-   text-align: right; 
-
+.voltar {
+    width: 350px;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration-line: underline;
+    opacity: 0.5;
 }
 
-.form--error{
-    display:none;
-        
+.titulo {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    width: 43%;
+    text-align: left;
 }
 
-.botao__continuar{
+.form {
+    padding: 1rem 0;
+}
+
+.form__input {
+    width: 300px;
+    display: flex;
+    height: 40px;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__input__seguranca {
+    width: 300px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalhes__gerais {
+    text-align: left;
+}
+
+.cadastro {
+    border-radius: 4px;
+    height: 25px;
+    border: #FFFFFF;
+}
+
+.cadastro__seguranca {
+    border-radius: 4px;
+    height: 25px;
+    border: #FFFFFF;
+    width: 300px;
+}
+
+.form--error {
+    display: none;
+}
+
+.botao__continuar {
     background: #FF276F;
     border-radius: 6px;
-    
+    width: 100px;
+    height: 32px;
+    color:#FFFFFF;
+    box-shadow:10px 10px 60px  #FF276F;
+    border: #FF276F;
 }
 
+.form__button{
+    display: flex;
+    justify-content: center;
+    padding-top:2rem ;
+}
 
- /*
+/*
 .nome__principal{
     position: absolute;
     width: 193px;
@@ -259,5 +314,3 @@ div{
         background-position: 95% 50%;
         border: 2px #ff7a7a solid;
     }
-    
-    

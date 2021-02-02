@@ -26,40 +26,45 @@
         <div class="titulo">
             1.Dados para acesso
         </div>
-        <form>
+        <br>
+        <form class="form">
+
             <div class="form__input" id="caixa_nome_input">
-                <p class="detalhe__nome">Seu Nome</p> <input type="text" class="cadastro" required>
+                <p class="detalhes__gerais">Seu Nome</p>
+                <input type="text" class="cadastro" required>
                 <p class="form--error-text form--error">Preencha o campo com seu nome</p>
             </div>
 
             <div class="form__input" id="caixa_celular_input">
-                <p class="detalhe__celular"> Celular </p><input type="text" placeholder="DDD + número" class="cadastro"
-                    required>
+                <p class="detalhes__gerais">Celular</p>
+                <input type="text" placeholder="DDD + número" class="cadastro" required>
                 <p class="form--error">Preencha o campo com seu celular</p>
             </div>
 
             <div class="form__input" id="caixa_senha_input">
-                <p class="detalhe__senha">Senha</p> <input type="password" class="cadastro" required>
+                <p class="detalhes__gerais">Senha</p>
+                <input type="password" class="cadastro" required>
                 <p class="form--error">Preencha o campo com uma senha</p>
             </div>
             <div class="pergunta_segurança_input">
                 <p> Pergunta de segurança </p>
             </div>
-
-            <select class="pergunta" id="caixa_pergunta">
+            <div class="form__input__seguranca">
+            <select class="cadastro__seguranca" id="caixa_pergunta">
                 <option>Selecione sua pergunta</option>
                 <option>Qual é o nome da sua mãe</option>
                 <option>Cor favorita</option>
                 <option>Sua ultima professora</option>
             </select>
+        </div>
 
-            <div class="form_input" id="caixa_resposta_input">
-                <input class="detalhe" type="text" placeholder="Digite sua resposta" class="cadastro" required>
+            <div class="form__input__seguranca" id="caixa_resposta_input">
+                <input  type="text" placeholder="Digite sua resposta" class="cadastro__seguranca" required>
                 <p class="form--error">Responda uma pergunta de segurança</p>
 
             </div>
 
-            <div id="botao">
+            <div class="form__button ">
                 <button class="botao__continuar">Continuar</button>
             </div>
 
