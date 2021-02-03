@@ -1,6 +1,3 @@
-div{
-    border: 1px red solid;
-}
 
 .logo{
     text-align: center;
@@ -10,7 +7,7 @@ div{
    background-color: #32236D;
    border-radius: 20px;
    width: 70vh;
-   height: 40vh;
+   height: 50vh;
    align-content: center;
    display: flex;
    flex-direction: column;
@@ -19,36 +16,51 @@ div{
 .login-topo{
     text-align: center;
     opacity: 50%;
+    margin: 25px;
+}
+
+.login--field{
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid #b9b6d3;
+    width: 70%;
 }
 
 .login-input{
     font-size: 24px;
     line-height: 28px;
     display: flex;
-    margin: auto;
+    margin: 5px;
     justify-content: space-between;
     width: 80%;
+    margin-left: 11%;
 }
 
 .esqueciSenha{
     opacity: 50%;
     color: white;
     margin: auto;
+    display: none;
 }
 
 .form--error{
     margin: auto;
+    color: #FF6363;
+    opacity: 0.5;
+    display: none;
 }
 
 .botoes{
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    padding: 0 10% ;
+    margin-bottom: 30px;
 }
 
 .cadastro{
-    width: 20%;
+    width: 30%;
     margin-top: 0.5rem;
     background-color: #32236D;
     color: #fff;
