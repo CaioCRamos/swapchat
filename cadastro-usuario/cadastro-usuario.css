@@ -1,316 +1,113 @@
 body {
     flex-direction: column;
 }
-
-
-
 .cabecario {
     display: flex;
 }
-
+.nome__principal {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    display: flex;
+    width: 45vw;
+    text-align: left;
+}
+.voltar {
+    width: 45vw;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration-line: underline;
+    opacity: 0.5;
+    margin-top: 10px;
+}
 .caixa__maior {
     justify-content: center;
-    width: 700px;
-    height: 500px;
+    width: 90%;
+    height: 80%; /*altura*/
     background: #32236D;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.nome__principal {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
-    color: #FFFFFF;
-    display: flex;
-    width: 350px;
-    text-align: left;
-}
-
-.voltar {
-    width: 350px;
-    text-align: right;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    text-decoration-line: underline;
-    opacity: 0.5;
-}
-
 .titulo {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.6);
     display: flex;
-    width: 43%;
+    width: 45vw;
     text-align: left;
 }
-
 .form {
     padding: 1rem 0;
 }
-
 .form__input {
-    width: 300px;
+    width: 45vw;
     display: flex;
     height: 40px;
-    margin: 1rem 0;
+    margin-top: 1rem;
     justify-content: space-between;
     align-items: center;
 }
-
-.form__input__seguranca {
-    width: 300px;
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .detalhes__gerais {
     text-align: left;
+    font-size: 24px;
 }
-
 .cadastro {
     border-radius: 4px;
-    height: 25px;
+    height: 40px;
     border: #FFFFFF;
+    width: 68%;
 }
-
-.cadastro__seguranca {
-    border-radius: 4px;
-    height: 25px;
-    border: #FFFFFF;
-    width: 300px;
-}
-
 .form--error {
     display: none;
+    color: #FF6363;
+    font-size: 16px;
+    Opacity: 50%;
+    text-align: right;
+    font-style: italic;
 }
+.pergunta-seguranca{
+    margin-top:40px ;
 
+}
+.form__input__seguranca {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+.cadastro__seguranca {
+    border-radius: 4px;
+    height: 40px;
+    border: #FFFFFF;
+    width: 100%;
+}
+.form--error-seguranca{
+    color: #FF6363;
+    font-size: 16px;
+    Opacity: 50%;
+    text-align: left;
+    font-style: italic;
+    display: none;
+}
+.form__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
 .botao__continuar {
     background: #FF276F;
     border-radius: 6px;
-    width: 100px;
-    height: 32px;
-    color:#FFFFFF;
-    box-shadow:10px 10px 60px  #FF276F;
-    border: #FF276F;
-}
-
-.form__button{
-    display: flex;
-    justify-content: center;
-    padding-top:2rem ;
-}
-
-/*
-.nome__principal{
-    position: absolute;
-    width: 193px;
-    height: 50px;
-    left: 330px;
-    top: 30px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
-    color: #FFFFFF;
-    }
-    
-    .voltar{
-    position: absolute;
-    width: 43px;
-    height: 19px;
-    left: 970px;
-    top: 40px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 19px;
-    text-align: right;
-    text-decoration-line: underline;
-    color: #FFFFFF;
-    
-    }
-    
-    .titulo{
-    position: absolute;
-    width: 226px;
-    height: 28px;
-    left: 478px;
-    top: 120px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 28px;
-    color: rgba(255, 255, 255, 0.6);
-    
-    }
-    
-    .detalhe__nome{
-    position: absolute;
-    width: 112px;
-    height: 28px;
-    left: -150px;
-    top: 5px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    }
-    
-    #caixa_nome_input{
-    position: absolute;
-    width: 279px;
-    height: 40px;
-    left: 500px;
-    top: 200px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    }
-    
-    .detalhe__celular{
-    position: absolute;
-    width: 78px;
-    height: 28px;
-    left: -150px;
-    top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    }
-    
-    #caixa_celular_input{
-    position: absolute;
-    width: 279px;
-    height: 40px;
-    left: 700px;
-    top: 550px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    }
-    
-    .detalhe__senha{
-    position: absolute;
-    width: 71px;
-    height: 28px;
-    left: -170px;
-    top: 5px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    }
-    
-    #caixa_senha_input{
-    position: absolute;
-    width: 279px;
-    height: 40px;
-    left: 800px;
-    top: 600px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    }
-    
-    .pergunta_segurança_input{
-    position: absolute;
-    width: 261px;
-    height: 28px;
-    left: 580px;
-    top: 700px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-    
-    }
-    #caixa_pergunta{
-    position: absolute;
-    width: 483px;
-    height: 40px;
-    left: 600px;
-    top: 750px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    }
-    #caixa_resposta_input{
-    position: absolute;
-    width: 483px;
-    height: 40px;
-    left: 600px;
-    top: 800px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    }
-    
-    input{
-    position: absolute;
-    width: 281px;
-    height:40px ;
-    border: 1px;
-    }
-    .detalhe{
-    position: center;
-    width: 281px;
-    height:40px ;
-    border: 1px;
-    }
-    
-    .caixa__maior{
-    position: center;
-    width: 700px;
-    height: 500px;
-    left: 158px;
-    top: 329px;
-    background: #32236D;
-    border-radius: 20px;
-    }
-    
-    .botao__continuar{
-    position: absolute;
     width: 154px;
     height: 50px;
-    left: 750px;
-    top: 900px;
-    background: #FF276F;
-    border-radius: 6px;
     color: #FFFFFF;
-    }
-    
-    /*.form--error-text-form--error{
-        display:none;
-        color: #ff7a7a;
-        font-size: 0.7rem;
-        font-style: italic;
-        margin-bottom: 0.5rem;
-        
-    }
-    
-    .form__input.error
-    .form--error{
-        display: block;
-    }
-    
-    .form__input.error
-    .cadastro{
-        background-repeat: no-repeat;
-        background-position: 95% 50%;
-        border: 2px #ff7a7a solid;
-    }
+    box-shadow: 10px 10px 80px #FF276F;
+    border: #FF276F;
+}

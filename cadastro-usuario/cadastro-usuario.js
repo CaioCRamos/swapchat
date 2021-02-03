@@ -1,24 +1,15 @@
-var formCadastro = document.querySelectorAll('.cadastro');
-/* a variavel esta selecionando uma class do HTML*/ 
-var formBtn = document.querySelector('.botão__continuar');
-/* esta selecionando uma class do html (o botão)*/
+function continuar(){
+  var nome= document.getElementById("nome_input").Value;
+  var celular= document.getElementById("celular_input").value;
+  var senha= documente.getElementById("senha_input").value;
+  var resposta= document.getElementById("resposta_input").value;
 
-formBtn.addEventListener('click', function(e)
-/* addEventListener - adiciona o botão na lista,função para dizer o que vai acontecer 
-quando o usuário clicar em um botão*/ 
-{
-  for(var i = 0; i <formCadastro.length; i++) { /* contador*/ 
-    var currentInput = formCadastro[i];
-    var inputParent = currentInput.parentNode;
-    
-     // Se a entrada for inválida e NÃO for o campo de e-mail, adicione a classe de erro e remova o marcador
-     if((!currentInput.validity.valid) && (currentInput.getAttribute('id') !== 'caixa_celular_input')) {
 
-        inputParent.classList.add('error');
-        e.preventDefault();
-      
-      } else {
-        inputParent.classList.remove('error'); // se nada disso acontecer, remove o error, e segue.
-      }
-    };
-});
+  if (nome === "" && celular === "" && senha === "" && resposta === "") {
+    alert("Cadastro efetuado com sucesso!");
+
+}else{
+  var error= document.getElementsByClassName("form--error");
+  for (var contador = 0; contador < error.length; contador++);
+}
+}
