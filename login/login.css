@@ -3,11 +3,19 @@
     text-align: center;
 }
 
+.login{
+    max-width: 960px;
+    height: 60vh;
+    align-content: center;
+    display: flex;
+    margin: auto;
+}
+
 .form{
    background-color: #32236D;
    border-radius: 20px;
    width: 70vh;
-   height: 50vh;
+   height: 40vh;
    align-content: center;
    display: flex;
    flex-direction: column;
@@ -17,13 +25,15 @@
     text-align: center;
     opacity: 50%;
     margin: 25px;
+    font-size: 18px;
 }
 
 .login--field{
     padding: 0.5rem;
-    border-radius: 7px;
+    border-radius: 4px;
     border: 1px solid #b9b6d3;
     width: 70%;
+    height: 40px;
 }
 
 .login-input{
@@ -33,7 +43,7 @@
     margin: 5px;
     justify-content: space-between;
     width: 80%;
-    margin-left: 11%;
+    margin-left: 10%;
 }
 
 .esqueciSenha{
