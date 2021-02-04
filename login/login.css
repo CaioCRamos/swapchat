@@ -1,3 +1,97 @@
-h1 {
-    color: white;
+
+.logo{
+    text-align: center;
 }
+
+.login{
+    max-width: 960px;
+    height: 60vh;
+    align-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.form{
+   background-color: #32236D;
+   border-radius: 20px;
+   width: 70vh;
+   height: 40vh;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.login-topo{
+    text-align: center;
+    opacity: 50%;
+    margin: 25px;
+    font-size: 18px;
+}
+
+.login--field{
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #b9b6d3;
+    width: 70%;
+    height: 40px;
+}
+
+.login-input{
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.esqueciSenha{
+    opacity: 50%;
+    color: white;
+    margin: auto;
+    display: none;
+}
+
+.form--error{
+    margin: auto;
+    color: #FF6363;
+    opacity: 0.5;
+    display: none;
+}
+
+.botoes{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% ;
+    margin-bottom: 30px;
+}
+
+.cadastro{
+    width: 30%;
+    margin-top: 0.5rem;
+    background-color: #32236D;
+    color: #fff;
+    text-transform: uppercase;
+    height: 3rem;
+    border-radius: 7px;
+    border:none;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.entrar{
+    width: 20%;
+    margin-top: 0.5rem;
+    background-color:#FF276F;
+    color: #fff;
+    text-transform: uppercase;
+    height: 3rem;
+    border-radius: 7px;
+    border:none;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
