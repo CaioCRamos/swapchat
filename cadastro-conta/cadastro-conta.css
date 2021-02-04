@@ -1,0 +1,134 @@
+body {
+    flex-direction: column;
+}
+.cabecario {
+    display: flex;
+}
+div{
+    border: #FFFFFF 1px solid;
+}
+.nome__principal {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    display: flex;
+    width: 45vw;
+    text-align: left;
+}
+.voltar{
+    width: 45vw;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration-line: underline;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+.caixa__maior{
+    justify-content: center;
+    width: 90%;
+    height: 80%; /*altura*/
+    background: #32236D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    width: 45vw;
+    text-align: left;
+}
+.form {
+    padding: 1rem 0;
+}
+.form__input {
+    width: 45vw;
+    display: flex;
+    height: 40px;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.detalhes__gerais {
+    text-align: left;
+    font-size: 24px;
+}
+.cadastro {
+    border-radius: 4px;
+    height: 40px;
+    border: #FFFFFF;
+    width: 68%;
+    padding: 1rem;
+}
+.texto_adicionar{
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+color: rgba(255, 255, 255, 0.6);
+margin-top: 2rem;
+
+}
+.caixa{
+    justify-content: space-between;
+    display: flex;
+    width: 50%;
+    align-items: left;
+    
+}
+.texto_adicionar_botao{
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+background: #32236D;
+border-radius: 20px;
+
+}
+#botao_enviar{
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 6px;
+width: 25%;
+height: 65%;
+
+
+}
+.foto{
+width: 55px;
+height: 55px;
+background: #C4C4C4;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+
+}
+.form__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.adicionar_nova_conta{
+width: 483px;
+height: 40px;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 6px;
+background: #32236D;
+border-radius: 20px;
+color:#FFFFFF;
+
+}
+.botao__concluir{
+    background: #FF276F;
+    border-radius: 6px;
+    width: 154px;
+    height: 50px;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 80px #FF276F;
+    border: #FF276F;
+}
