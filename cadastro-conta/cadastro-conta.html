@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilo-geral.css">
     <link rel="stylesheet" href="cadastro-conta.css">
-    <title>Cadastro</title>
+    <title>swapchat</title>
 </head>
 
 <body>
@@ -40,9 +40,29 @@
             <img class="foto"
                 src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
                 <button class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()">Enviar foto</button>
+                <p class="substituir"  id="substituir_foto" onclick="subistituir()"> substituir foto. </p>
+                <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
         </div>
-        <div>
-            <button class="adicionar_nova_conta">+ Adicionar perfil 2</button>
+        <form>
+            <div class="form__input" id="nome_perfil_input_1">
+                <p class="detalhes__gerais">Nome do Perfil 2</p>
+                <input type="text" class="cadastro" required>
+            </div>
+            <div class="form__input" id="celuar_input_1">
+                <p class="detalhes__gerais">Celular</p>
+                <input type="text" class="cadastro" placeholder="DDD+número " required>
+            </div>
+            <div>
+                <p class="texto_adicionar"> Adicionar uma foto ao perfil 2: </p>
+            </div>
+            
+        </form>
+        <div class="caixa">
+            <img class="foto"
+                src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
+                <button class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()">Enviar foto</button>
+                <p class="substituir" id="substituir_foto" onclick="subistituir()"> substituir foto. </p>
+                <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
         </div>
 
         <div class="form__button ">

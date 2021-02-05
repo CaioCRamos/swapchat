@@ -11,7 +11,12 @@ function adicionar(){
     adicionar_conta.appendChild(adicionar_foto);
 }
 
+function subistituir(){
 
+}
+ function continuar(){
+     
+ }
     
 
 
