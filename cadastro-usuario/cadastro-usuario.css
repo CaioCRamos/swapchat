@@ -1,0 +1,116 @@
+body {
+    flex-direction: column;
+}
+.cabecario {
+    display: flex;
+}
+.nome__principal {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    display: flex;
+    width: 45vw;
+    text-align: left;
+}
+.voltar {
+    width: 45vw;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration-line: underline;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+.caixa__maior {
+    justify-content: center;
+    width: 90%;
+    height: 80%; /*altura*/
+    background: #32236D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    width: 45vw;
+    text-align: left;
+}
+.form {
+    padding: 1rem 0;
+}
+.form__input {
+    width: 45vw;
+    display: flex;
+    height: 40px;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.detalhes__gerais {
+    text-align: left;
+    font-size: 24px;
+}
+.cadastro {
+    border-radius: 4px;
+    height: 40px;
+    border: #FFFFFF;
+    width: 68%;
+}
+.form--error {
+    display: none;
+    color: #FF6363;
+    font-size: 16px;
+    Opacity: 50%;
+    text-align: right;
+    font-style: italic;
+}
+.pergunta-seguranca{
+    margin-top:40px ;
+
+}
+.form__input__seguranca {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+.cadastro__seguranca {
+    border-radius: 4px;
+    height: 40px;
+    border: #FFFFFF;
+    width: 100%;
+}
+.form--error-seguranca{
+    color: #FF6363;
+    font-size: 16px;
+    Opacity: 50%;
+    text-align: left;
+    font-style: italic;
+    display: none;
+}
+.form__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.botao__continuar {
+    background: #FF276F;
+    border-radius: 6px;
+    width: 154px;
+    height: 50px;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 80px #FF276F;
+    border: #FF276F;
+}
+a{
+    color:#FFFFFF;
+}
