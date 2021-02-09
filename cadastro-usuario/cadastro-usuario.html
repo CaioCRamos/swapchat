@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo-geral.css">
+    <link rel="stylesheet" href="cadastro-usuario.css">
+    <title>swapchat</title>
+
+</head>
+
+<body>
+    <div class="cabecario">
+
+        <div class="nome__principal">
+            Cadastro
+        </div>
+        <div class="voltar">
+            voltar
+        </div>
+
+    </div>
+
+    <div class="caixa__maior">
+        <div class="titulo">
+            1.Dados para acesso
+        </div>
+        <br>
+        <form class="form">
+
+            <div class="form__input" id="nome_input">
+                <p class="detalhes__gerais">Seu Nome</p>
+                <input type="text" class="cadastro" required>
+            </div>
+            <p class="form--error-text form--error">Preencha o campo com seu nome</p>
+
+            <div class="form__input" id="celular_input">
+                <p class="detalhes__gerais">Celular</p>
+                <input type="text" placeholder="DDD + número" class="cadastro" required>
+            </div>
+            <p class="form--error">Preencha o campo com seu celular</p>
+
+            <div class="form__input" id="senha_input">
+                <p class="detalhes__gerais">Senha</p>
+                <input type="password" class="cadastro" required>
+            </div>
+            <p class="form--error">Preencha o campo com uma senha</p>
+            <div class="pergunta-seguranca">
+                <div class="detalhes__gerais">
+                    <p> Pergunta de segurança </p>
+                </div>
+                <div class="form__input__seguranca">
+                    <select class="cadastro__seguranca" id="caixa_pergunta">
+                        <option disabled selected>Selecione uma pergunta</option>
+                        <option>Qual é o nome da sua mãe?</option>
+                        <option>Cor favorita?</option>
+                        <option>Sua ultima professora?</option>
+                    </select>
+                </div>
+                <div class="form__input__seguranca">
+                    <input type="text" placeholder="Digite sua resposta" class="cadastro__seguranca" required>
+                </div>
+
+            </div>
+            <p class="form--error-seguranca">Responda uma pergunta de segurança</p>
+
+            <div class="form__button ">
+                <button class="botao__continuar" onclick="continuar()"><a href="../cadastro-conta/cadastro-conta.html"
+                        style="text-decoration:none">Continuar</a></button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <script src="cadastro-usuario.js"></script>
+</body>
+
+</html>
