@@ -1,0 +1,17 @@
+div{
+border: 1px solid red;
+}
+
+#caixaEsquerda{
+width:  34%;
+height: 100vh;
+
+
+
+}
+
+#caixaDaDireita{
+width: 66%;
+height: 100vh;
+
+}
