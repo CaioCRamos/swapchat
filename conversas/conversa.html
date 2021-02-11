@@ -31,7 +31,7 @@
         </div>
         <div class="conversas">
             <div class="pesquisar">
-
+                <input class="barraDePesquisa" type="text" placeholder="Pesquisar Contatos">
             </div>
             <ul class="listaConversas">
 
@@ -41,10 +41,25 @@
     <div class="caixaDireita">
         <div class="usuarioConversa"></div>
         <div class="chat">
-            <div class="mensagemEnviada">
-                
+            <ul class="mensagens1">
+               
+
+            </ul>
+            <!--
+            <div class="mensagemRecebida">
+            
             </div>
-            <div class="mensagemRecebida"></div>
+            <div class="mensagemEnviada">
+                <ul class="mensagem">
+                    <li class="batatinha">Batata promoçao</li>
+                </ul>
+            </div>
+            -->
+        </div>
+        <div class="campo">
+            <input class="emoji" type="image" src="..//imagens/emoji padrao.png" alt="Submit">
+            <textarea class="mensagemUsuario" cols="30" rows="4" placeholder="Digite sua Mensagem"></textarea>
+            <input class="enviar" type="image" src="../imagens/Paper-Plane-icon.png" onclick="enviarMensagens()">
         </div>
     </div>
     <script src="./conversa.js"></script>
