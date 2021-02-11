@@ -3,8 +3,6 @@ body {
     align-items: left;
 }
 
-
-
 .bloco_inteiro {
     display: flex;
 }
@@ -63,8 +61,8 @@ body {
 .icone_add {
     display: flex;
     padding-left: 5%;
-    width:35px;
-    height:15px;
+    width: 35px;
+    height: 15px;
 }
 
 .texto_novo_contato {
@@ -77,46 +75,40 @@ a {
     color: #FFFFFF;
 }
 
-hr {
-border: 1px solid rgba(255, 255, 255, 0.1);
+.lista_contatos {
 }
 
-.lista_contatos{
-display: flex;
-padding:1rem;
-    
-}
-.contato-fixo{
-display: flex;
-padding:0.2em;
+.contato-fixo {
+    display: flex;
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 
 }
+.area_icone_contato{
+    display: flex;
+    align-items: center;
+}
+
 .icone_contato {
-width: 55px;
-height: 50px;
-box-sizing: border-box;
-border-radius: 50%;
-display: flex;
-margin-left: -15%;
-margin-top: -8%;
+    width: 55px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.detalhe {
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
 }
 .detalhe-nome{
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
-display: flex;
-
+    font-size: 20px;
 }
-.detalhe-telefone{
-font-weight: normal;
-font-size: 15px;
-line-height: 19px;
-color: rgba(255, 255, 255, 0.6);
-padding-top: 3%;
-display:flex;
-margin-top: 10%;
-margin-left: -40%;
 
-
+.detalhe-telefone {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    
 }

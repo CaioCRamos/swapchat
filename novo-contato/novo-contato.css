@@ -1,59 +1,61 @@
 body {
     display: flex;
     align-items: left;
+
 }
 
 .bloco_inteiro {
     display: flex;
-    margin-left: -21%;
+    width:25vw;
+    height: 100vh;
+    flex-direction: column;
+    float: left;
 }
 
 .lado_esquerdo {
-    width: 29vw;
-    height: 7vw;
+    height: 13vh;
     background: #32236D;
     align-items: left;
-    margin-left: -50vw;
-    margin-top: -24vw;
 }
 
 .contatos {
     display: flex;
+    flex-direction: row;
 }
 
-.imagem_seta {
-    padding-top: 128%;
+.voltar{
+    display: flex;
+    align-items: center;
+    height: 13vh;
 }
 
 .texto_contato {
-    padding-left: 15%;
-    text-align: center;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
-    padding-top: 8%;
+    height: 13vh;
+    flex:1;
+    display: flex;
+    align-items:center ; 
+    justify-content: center;
+
 }
 
 .quadro_menor {
-    width: 29vw;
-    height: 41vw;
+    height: 87vh;
     background: #261855;
-    margin-left: -50vw;
-    margin-top: 7vw;
 }
 
 .form {
-    padding: 1rem 0;
+    padding: 0.5rem ;
 }
 
 
 .form__input {
     display: flex;
-    width: 28vw;
     height: 40px;
     margin-top: 1rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .detalhes__gerais {
@@ -71,29 +73,13 @@ body {
     padding-left: 4%;
 }
 
-.caixa {
-    width: 50%;
-    align-items: left;
-    padding: 0.5rem;
-    
-}
-
-.foto {
-    width: 55px;
-    height: 50px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    display: flex;
-    margin-left: 1%;
-    margin-top: -8%;
-}
 
 .texto_adicionar_botao {
     font-size: 18px;
     color: #FFFFFF;
     background: #32236D;
     border-radius: 5px;
-    
+
 }
 
 #botao_adicionar {
@@ -107,17 +93,6 @@ body {
     margin-top: -20%;
     display: flex;
     padding-left: 20%;
-}
-
-.arquivo {
-    font-size: 13px;
-    line-height: 19px;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 10%;
-    margin-left: 25%;
-    margin-top: -2%;
-    
-   
 }
 
 .form__button {
@@ -139,4 +114,7 @@ body {
 
 a {
     color: #FFFFFF;
+}
+.area_restante{
+    width:75vw;
 }
