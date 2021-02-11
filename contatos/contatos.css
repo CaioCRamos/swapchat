@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    align-items: left;
+}
+
+.bloco_inteiro {
+    display: flex;
+    width:25vw;
+    height: 100vh;
+    flex-direction: column;
+    float: left;
+}
+
+.lado_esquerdo {
+   height: 13vh;
+    background: #32236D;
+    align-items: left;
+    
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row ;
+}
+.voltar{
+    display: flex;
+    align-items: center;
+    height: 13vh;
+}
+
+.texto_contato {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    height: 13vh;
+    flex:1;
+    display: flex;
+    align-items:center ; 
+    justify-content: center;
+}
+
+.quadro_menor {
+    height: 87vh;
+    background: #261855;
+}
+
+.novo_contato {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao_add {
+    width: 20vw;
+    height: 4vh;
+    background: #FF276F;
+    border-radius: 6px;
+    border: 6px solid #FF276F;
+    display: flex;
+}
+
+.icone_add {
+    padding-left: 5%;
+    width: 35px;
+    height: 15px;
+}
+a {
+    color: #FFFFFF;
+}
+.texto_novo_contato {
+    
+    padding-left: 10%;
+   
+}
+
+.contato-fixo {
+    display: flex;
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+.area_icone_contato{
+    display: flex;
+    align-items: center;
+}
+
+.icone_contato {
+    width: 55px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.detalhe {
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+.detalhe-nome{
+    font-size: 20px;
+}
+
+.detalhe-telefone {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    
+}
+.area_restante{
+    width:75vw;
+}

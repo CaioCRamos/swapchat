@@ -42,13 +42,11 @@ form {
 }
 
 img {
-    width: 87px;
-    height: 87px;
-    background: #C4C4C4;
-    border: 1px solid #FFFFFF;
+    width: 98px;
     box-sizing: border-box;
     margin-left: 40%;
     background-image: none !important;
+    padding-top: 5%;
 }
 
 .form__button {
