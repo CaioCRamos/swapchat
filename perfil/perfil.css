@@ -6,12 +6,34 @@ border: 1px solid red;
 width:  34%;
 height: 100vh;
 
-
-
 }
+
+#topo{
+background-color: #32236D;
+padding: 5%; 
+width: 100%;
+height: 15%;
+font-size: 1.5rem;
+}
+
+#meio{
+background-color: #261855;
+width: 100%;
+height: 85%;
+}
+
+#fotos{
+width: 100%;
+height: 50%;
+margin: auto;
+}
+#dados{
+width: 100%;
+height: 50%;
+}
+
 
 #caixaDaDireita{
 width: 66%;
 height: 100vh;
-
 }
