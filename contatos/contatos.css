@@ -5,77 +5,73 @@ body {
 
 .bloco_inteiro {
     display: flex;
+    width:25vw;
+    height: 100vh;
+    flex-direction: column;
+    float: left;
 }
 
 .lado_esquerdo {
-    width: 25vw;
-    height: 7vw;
+   height: 13vh;
     background: #32236D;
-    display: flex;
     align-items: left;
-    margin-left: -50vw;
-    margin-top: -1vw;
+    
 }
 
 .contatos {
     display: flex;
+    flex-direction: row ;
 }
-
-.imagem_seta {
-    padding-top: 135%;
+.voltar{
+    display: flex;
+    align-items: center;
+    height: 13vh;
 }
 
 .texto_contato {
-    padding-left: 35%;
-    text-align: center;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
-    padding-top: 25%;
+    height: 13vh;
+    flex:1;
+    display: flex;
+    align-items:center ; 
+    justify-content: center;
 }
 
 .quadro_menor {
-    width: 25vw;
-    height: 41vw;
+    height: 87vh;
     background: #261855;
-    margin-left: -25vw;
-    margin-top: 6vw;
 }
 
 .novo_contato {
+    height: 10vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .botao_add {
     width: 20vw;
-    height: 2.3vw;
+    height: 4vh;
     background: #FF276F;
     border-radius: 6px;
     border: 6px solid #FF276F;
     display: flex;
-    margin-left: 10%;
-    margin-top: 5%;
 }
 
 .icone_add {
-    display: flex;
     padding-left: 5%;
     width: 35px;
     height: 15px;
 }
-
-.texto_novo_contato {
-    display: flex;
-    padding-left: 10%;
-    padding-top: 0.5%;
-}
-
 a {
     color: #FFFFFF;
 }
-
-.lista_contatos {
+.texto_novo_contato {
+    
+    padding-left: 10%;
+   
 }
 
 .contato-fixo {
@@ -111,4 +107,7 @@ a {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     
+}
+.area_restante{
+    width:75vw;
 }
