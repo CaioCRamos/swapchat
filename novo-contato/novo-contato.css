@@ -114,6 +114,7 @@ body {
 
 a {
     color: #FFFFFF;
+    text-decoration: none;
 }
 .area_restante{
     width:75vw;
