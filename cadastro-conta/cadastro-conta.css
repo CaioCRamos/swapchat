@@ -66,6 +66,14 @@ body {
     width: 68%;
     padding: 1rem;
 }
+.form--error {
+    display: none;
+    color: #FF6363;
+    font-size: 16px;
+    Opacity: 50%;
+    text-align: right;
+    font-style: italic;
+}
 .texto_adicionar {
     font-size: 18px;
     line-height: 21px;
@@ -75,9 +83,9 @@ body {
 }
 .caixa {
     display: flex;
-    width: 50%;
     align-items: left;
-    padding: 0.5rem;
+    padding: 0,3rem;
+    justify-content: space-evenly;
 }
 .foto {
     width: 55px;
@@ -85,37 +93,28 @@ body {
     margin-left: -5%;
 }
 .texto_adicionar_botao {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 14px;
     color: #FFFFFF;
-    background: #32236D;
     border-radius: 20px;
 }
 #botao_enviar {
     border: 1px solid #FFFFFF;
+    background: #32236D;
     box-sizing: border-box;
     border-radius: 6px;
     width: 25%;
-    height: 65%;
-    align-items: center;
+    height: 70%;
     margin-left: 10%;
+    margin-top: 2%;
 }
-.substituir {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration-line: underline;
-    color: rgba(255, 255, 255, 0.6);
-    margin-left: -22%;
-    margin-top: 8%;
-}
+
 .arquivo {
     font-size: 16px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.6);
     margin-left: 10%;
     padding: 0.5rem;
+    margin-top: 1%;
 }
 
 .form__button {

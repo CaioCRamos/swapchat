@@ -16,7 +16,7 @@
         </div>
 
         <div class="voltar">
-         <a href="../cadastro-usuario/cadastro-usuario.html" style="text-decoration:none"> Voltar</a>  
+            <a href="../cadastro-usuario/cadastro-usuario.html" style="text-decoration:none"> Voltar</a>
         </div>
     </div>
     <div class="caixa__maior">
@@ -26,51 +26,52 @@
         <div>
             <div class="form__input">
                 <p class="detalhes__gerais">Nome do Perfil 1</p>
-                <input type="text" class="cadastro"  id="nome_perfil_input_1" >
+                <input type="text" class="cadastro" id="nome_perfil_input_1">
             </div>
-            <div class="form__input" >
+            <p class="form--error"> Preencha o campo do nome (perfil 1)</p>
+
+            <div class="form__input">
                 <p class="detalhes__gerais">Celular</p>
-                <input type="text" class="cadastro"id="celuar_input_1" placeholder="DDD+número " >
+                <input type="text" class="cadastro" id="celuar_input_1" placeholder="DDD+número ">
             </div>
+            <p class="form--error">Preencha o campo do celular (perfil 1)</p>
             <div>
                 <p class="texto_adicionar"> Adicionar uma foto: </p>
             </div>
-        </div>
-        <div class="caixa">
-            <img class="foto"
-                src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
-            <button type="file" class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()">Adicionar foto</button>
-            <!-- <p class="substituir" id="substituir_foto" onclick="subistituir()"> substituir foto. </p> -->
-            <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
-        </div>
-        <div>
-            <div class="form__input" >
+
+            <div class="caixa">
+                <img class="foto"
+                    src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
+                <input type="file" class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()"></input>
+                <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
+            </div>
+
+            <div class="form__input">
                 <p class="detalhes__gerais">Nome do Perfil 2</p>
                 <input type="text" class="cadastro" id="nome_perfil_input_2">
             </div>
-            <div class="form__input" >
+            <p class="form--error">Preencha o campo do nome (perfil 1)</p>
+            <div class="form__input">
                 <p class="detalhes__gerais">Celular</p>
-                <input type="text" class="cadastro" id="celuar_input_2" placeholder="DDD+número " >
+                <input type="text" class="cadastro" id="celuar_input_2" placeholder="DDD+número ">
             </div>
+            <p class="form--error">Preencha o campo do celular (perfil 2)</p>
             <div>
                 <p class="texto_adicionar"> Adicionar uma foto ao perfil 2: </p>
             </div>
 
-        </div>
-        <div class="caixa">
-            <img class="foto"
-                src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
-            <button type="file"  class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()">Adicionar foto</button>
-            <!-- <p class="substituir"  id="substituir_foto" onclick="subistituir()"> substituir foto. </p> -->
-            <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
-        </div>
 
-        <div class="form__button ">
-            <button class="botao__concluir" onclick="continuar()">Concluir </button>
+            <div class="caixa">
+                <img class="foto"
+                    src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
+                <input type="file" class="texto_adicionar_botao" id="botao_enviar" onclick="">
+                <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
+            </div>
+            <div class="form__button ">
+                <button class="botao__concluir" onclick="continuar()">Concluir</button>
+            </div>
         </div>
     </div>
-
-
 
 
 

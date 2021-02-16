@@ -5,7 +5,7 @@
     var pergunta= document.getElementById("caixa_pergunta").value;
     var resposta = document.getElementById("resposta_input").value;
 
-    debugger;
+    
     if (nome !== "" && celular !== "" && senha !== "" && pergunta !== "" && resposta !== "" ) {
         var corpoJson = {
             nome: nome,
