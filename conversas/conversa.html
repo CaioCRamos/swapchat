@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,20 @@
     <link rel="stylesheet" href="./conversa.css">
     <title>Conversa</title>
 </head>
+
 <body>
     <div class="caixaEsquerda">
         <div class="caixa-topo">
             <div class="caixatopoEsquerda">
-                <div class="perfil1"></div>
+                <div class="perfil1">
+                    <img class="foto1" src="../imagens/perfilPadrao.jpg">
+                </div>
                 <div class="configs">
                     <img src="../imagens/options.png">
                 </div>
-                <div class="perfil2"></div>
+                <div class="perfil2">
+                    <img class="foto1" src="../imagens/perfilPadrao.jpg">
+                </div>
             </div>
             <div class="caixatopoDireita">
                 <div class="perfis">
@@ -30,19 +36,24 @@
             </div>
         </div>
         <div class="conversas">
-            <div class="pesquisar">
+            <!-- <div class="pesquisar">
                 <input class="barraDePesquisa" type="text" placeholder="Pesquisar Contatos">
-            </div>
-            <ul class="listaConversas">
-
+            </div> -->
+            <ul id="listaConversas" class="listaConversas">
+                
             </ul>
+            <!-- <ul class="listaConversas2">
+
+            </ul> -->
         </div>
     </div>
     <div class="caixaDireita">
-        <div class="usuarioConversa"></div>
+        <div class="usuarioConversa">
+
+        </div>
         <div class="chat">
             <ul class="mensagens1">
-               
+
 
             </ul>
             <!--
@@ -57,11 +68,12 @@
             -->
         </div>
         <div class="campo">
-            <input class="emoji" type="image" src="..//imagens/emoji padrao.png" alt="Submit">
-            <textarea class="mensagemUsuario" cols="30" rows="4" placeholder="Digite sua Mensagem"></textarea>
-            <input class="enviar" type="image" src="../imagens/Paper-Plane-icon.png" onclick="enviarMensagens()">
+            <!-- <input class="emoji" type="image" src="..//imagens/emoji padrao.png" alt="Submit"> -->
+            <textarea class="mensagemUsuario" cols="30" rows="2" placeholder="Escreva uma mensagem"></textarea>
+            <input class="enviar" type="button" value="Enviar" onclick="enviarMensagens()">
         </div>
     </div>
     <script src="./conversa.js"></script>
 </body>
+
 </html>

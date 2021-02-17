@@ -1,5 +1,5 @@
 div{
-    border: red solid 1px;
+    /* border: red solid 1px; */
     float: left;
 }
 
@@ -10,26 +10,39 @@ body{
 .caixaEsquerda {
     width: 35%;
     height: 100%;
+    background: rgba(38, 24, 85, 1);
+
 }
 
 .caixa-topo{
     width: 100%;
-    height: 12%;
+    height: 15%;
     padding: 5%;
     display: flex;
     justify-content: space-between;
+    background: rgba(50, 35, 109, 1);
 }
 
 .caixatopoEsquerda{
-
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .caixatopoDireita{
-    
+    margin: auto;
+}
+
+.foto1{
+    width: 60px;
+    border-radius: 50%;
 }
 
 .configs{
-    margin-left: 1vh;
+    margin-top: 17%;
+    margin-left: 2px;
+    margin-right: 2px;
+    
 }
 
 .perfis{
@@ -44,9 +57,25 @@ body{
     margin-right: 1vh;
 }
 
-.pesquisar{
-    
+.conversas{
+    width: 90%;
+    justify-content: center;
+    height: 4%;
+    background: rgba(38, 24, 85, 1);
 }
+
+.pesquisar{
+    width: 100%;
+    height: 4%;
+}
+
+.barraDePesquisa{
+    width: 100%;
+    height: 4vh;
+    border-radius: 5px;
+}
+
+
 
 
 .caixaDireita{
@@ -57,13 +86,15 @@ body{
 .usuarioConversa{
     display: flex;
     width: 100%;
-    height: 12%;
+    height: 15%;
+    background: rgba(38, 24, 85, 1);
+
 }
 
 .chat{
     display: flex;
     width: 100%;
-    height:75% ;
+    height: 75%;
     justify-content: space-between;
     background-image: url(../imagens/logo.png);
     background-repeat: no-repeat;
@@ -73,7 +104,21 @@ body{
 
 .campo{
     width: 100%;
-    height: ;
+    height: 10%;
+    justify-content: space-around;
+    display: flex;
+    background: rgba(50, 35, 109, 1);
+    padding-top: 15px;
+}
+
+.emoji{
+    display: flex;
+    
+}
+
+.enviar{
+    width: 10px;
+    height: 50%;
 }
 
 .mensagemRecebida{
@@ -85,9 +130,9 @@ body{
 
  textarea{
      width: 80%;
-     height: 5%;
+     height: 50%;
      border-radius: 5px;
-     background-color: ;
+     padding: 5px;
  }
  
 .enviar{
