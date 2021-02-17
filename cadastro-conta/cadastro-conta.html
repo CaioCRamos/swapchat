@@ -31,18 +31,18 @@
             <p class="form--error"> Preencha o campo do nome (perfil 1)</p>
 
             <div class="form__input">
-                <p class="detalhes__gerais">Celular</p>
-                <input type="text" class="cadastro" id="celuar_input_1" placeholder="DDD+número ">
+                <p class="detalhes__gerais">E-mail</p>
+                <input type="text" class="cadastro" id="email_input_1" >
             </div>
-            <p class="form--error">Preencha o campo do celular (perfil 1)</p>
+            <p class="form--error">Preencha o campo do email (perfil 1)</p>
             <div>
                 <p class="texto_adicionar"> Adicionar uma foto: </p>
             </div>
 
             <div class="caixa">
-                <img class="foto"
+                <img class="foto" id="imagem_perfil_1"
                     src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
-                <input type="file" class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()"></input>
+                <input type="file" class="texto_adicionar_botao" id="enviar_imagem_perfil_1" onchange="alteraImagemPerfil1()">
                 <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
             </div>
 
@@ -52,19 +52,19 @@
             </div>
             <p class="form--error">Preencha o campo do nome (perfil 1)</p>
             <div class="form__input">
-                <p class="detalhes__gerais">Celular</p>
-                <input type="text" class="cadastro" id="celuar_input_2" placeholder="DDD+número ">
+                <p class="detalhes__gerais">E-mail</p>
+                <input type="text" class="cadastro" id="email_input_2" >
             </div>
-            <p class="form--error">Preencha o campo do celular (perfil 2)</p>
+            <p class="form--error">Preencha o campo do email (perfil 2)</p>
             <div>
                 <p class="texto_adicionar"> Adicionar uma foto ao perfil 2: </p>
             </div>
 
 
             <div class="caixa">
-                <img class="foto"
+                <img class="foto" id="imagem_perfil_2"
                     src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
-                <input type="file" class="texto_adicionar_botao" id="botao_enviar" onclick="">
+                <input type="file" class="texto_adicionar_botao" id="enviar_imagem_perfil_2" onchange="alteraImagemPerfil2()">
                 <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
             </div>
             <div class="form__button ">

@@ -1,18 +1,30 @@
+var imagem1;
+var imagem2;
+
 async function continuar() {
     var nome1 = document.getElementById("nome_perfil_input_1").value;
-    var celular1 = document.getElementById("celuar_input_1").value;
+    var email1 = document.getElementById("email_input_1").value;
     var nome2 = document.getElementById("nome_perfil_input_2").value;
-    var celular2 = document.getElementById("celuar_input_2").value;
+    var email2 = document.getElementById("email_input_2").value;
 
     debugger;
 
-    if (nome1 !== "" && celular1 !== "" && nome2 !== "" && celular2 !== "") {
+    if (nome1 !== "" && email1 !== "" && nome2 !== "" && email2 !== "") {
         var corpoJson = {
-            nome1: nome1,
-            celular1: celular1,
-            nome2: nome2,
-            celular2: celular2
-        };
+            id: localStorage.getItem("id"),
+            contas:[
+                {
+                    nome: nome1,
+                    email: email1,
+                    imagem:imagem1
+                },
+                {
+                    nome: nome2,
+                    email: email2,
+                    imagem: imagem2
+                }
+            ]
+        }
 
         var resposta = await fetch("https://swapchat-api.herokuapp.com/v1/users/accounts", {
             method: "POST",
@@ -23,8 +35,7 @@ async function continuar() {
         });
         var respostaJson = await resposta.json();
 
-        if (resposta.mensagem === 200) {
-            localStorage.setItem("mensagem", respostaJson.mensagem);
+        if (resposta.status === 200) {
             alert(respostaJson.mensagem);
             window.location.href = "../cadastro-finalizacao/cadastro-finalizacao.html";
         }
@@ -34,26 +45,38 @@ async function continuar() {
             erros[contador].style.display = "block";
         }
     }
-
-
 }
 
+function alteraImagemPerfil1(){
+    var arquivos = document.getElementById("enviar_imagem_perfil_1").files;
+    var primeiroArquivo = arquivos[0];
 
+    var urlDaFoto = window.URL.createObjectURL(primeiroArquivo);
 
+    var imagemPerfil1 = document.getElementById("imagem_perfil_1");
+    imagemPerfil1.src = urlDaFoto;
 
+    obterImagemEmBase64(primeiroArquivo, function (base64Data) {
+        imagem1 = base64Data;
+    });
+}
 
+function alteraImagemPerfil2(){
+    var arquivos = document.getElementById("enviar_imagem_perfil_2").files;
+    var primeiroArquivo = arquivos[0];
 
+    var urlDaFoto = window.URL.createObjectURL(primeiroArquivo);
 
-// function adicionar(){
-//     var files = document.getElementById("uploadFoto").files;
-//     var primeiroArquivo = files[0];
-//     var urlDaFoto = window.URL.createObjectURL(primeiroArquivo);
-//     var adicionar_foto = modelo.content.cloneNode(true);
+    var imagemPerfil2 = document.getElementById("imagem_perfil_2");
+    imagemPerfil2.src = urlDaFoto;
 
-//     novafoto.querySelector(".foto").src = urlDaFoto;
-//     adicionar_conta.appendChild(adicionar_foto);
-// }
+    obterImagemEmBase64(primeiroArquivo, function (base64Data) {
+        imagem2 = base64Data;
+    });
+}
 
-
-
-
+function obterImagemEmBase64(file, callback) {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => callback(reader.result));
+    reader.readAsDataURL(file);
+}
