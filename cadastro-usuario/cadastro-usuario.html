@@ -27,23 +27,23 @@
             1.Dados para acesso
         </div>
         <br>
-        <form class="form">
+        <div class="form">
 
-            <div class="form__input" id="nome_input">
+            <div class="form__input" >
                 <p class="detalhes__gerais">Seu Nome</p>
-                <input type="text" class="cadastro" required>
+                <input type="text" class="cadastro" id="nome_input" required>
             </div>
-            <p class="form--error-text form--error">Preencha o campo com seu nome</p>
+            <p class="form--error">Preencha o campo com seu nome</p>
 
-            <div class="form__input" id="celular_input">
+            <div class="form__input" >
                 <p class="detalhes__gerais">Celular</p>
-                <input type="text" placeholder="DDD + número" class="cadastro" required>
+                <input type="text" placeholder="DDD + número" id="celular_input" class="cadastro" required>
             </div>
             <p class="form--error">Preencha o campo com seu celular</p>
 
-            <div class="form__input" id="senha_input">
+            <div class="form__input">
                 <p class="detalhes__gerais">Senha</p>
-                <input type="password" class="cadastro" required>
+                <input type="password" id="senha_input" class="cadastro" required>
             </div>
             <p class="form--error">Preencha o campo com uma senha</p>
             <div class="pergunta-seguranca">
@@ -59,18 +59,17 @@
                     </select>
                 </div>
                 <div class="form__input__seguranca">
-                    <input type="text" placeholder="Digite sua resposta" class="cadastro__seguranca" required>
+                    <input type="text" placeholder="Digite sua resposta" id="resposta_input" class="cadastro__seguranca" required>
                 </div>
 
             </div>
-            <p class="form--error-seguranca">Responda uma pergunta de segurança</p>
+            <p class="form--error-seguranca form--error">Responda uma pergunta de segurança</p>
 
             <div class="form__button ">
-                <button class="botao__continuar" onclick="continuar()"><a href="../cadastro-conta/cadastro-conta.html"
-                        style="text-decoration:none">Continuar</a></button>
+                <button class="botao__continuar" onclick="continuar()">Continuar</button>
             </div>
 
-        </form>
+        </div>
 
     </div>
 

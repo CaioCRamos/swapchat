@@ -92,12 +92,7 @@ body {
     width: 100%;
 }
 .form--error-seguranca{
-    color: #FF6363;
-    font-size: 16px;
-    Opacity: 50%;
     text-align: left;
-    font-style: italic;
-    display: none;
 }
 .form__button {
     display: flex;
