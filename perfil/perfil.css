@@ -27,6 +27,11 @@ width: 100%;
 height: 50%;
 margin: auto;
 }
+.foto{
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+}
 #dados{
 width: 100%;
 height: 50%;
