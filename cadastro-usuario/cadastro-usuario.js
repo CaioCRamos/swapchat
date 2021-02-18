@@ -23,7 +23,6 @@
             }
         });
     
-        var respostaJson = await resposta.json();
 
         if (resposta.status === 201) {
             localStorage.setItem("id", respostaJson.id);
