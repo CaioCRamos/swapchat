@@ -36,15 +36,19 @@
             </div>
         </div>
         <div class="conversas">
-            <!-- <div class="pesquisar">
-                <input class="barraDePesquisa" type="text" placeholder="Pesquisar Contatos">
-            </div> -->
+            <template id="modeloConversa">
+                <li onclick="mostrarConversa(this)">
+                    <input type="hidden" class="id">
+                    <img class="imagem" src="../imagens/perfilPadrao.jpg" alt="">
+                    <div class="detalhe">
+                        <span class="nome"></span>
+                        <span class="ultimaMensagem"></span>
+                    </div>
+                </li>
+            </template>
             <ul id="listaConversas" class="listaConversas">
                 
             </ul>
-            <!-- <ul class="listaConversas2">
-
-            </ul> -->
         </div>
     </div>
     <div class="caixaDireita">
@@ -52,7 +56,7 @@
 
         </div>
         <div class="chat">
-            <ul class="mensagens1">
+            <ul id="mensagens" class="mensagens1">
 
 
             </ul>
@@ -67,9 +71,9 @@
             </div>
             -->
         </div>
-        <div class="campo">
+        <div id="texto" class="campo">
             <!-- <input class="emoji" type="image" src="..//imagens/emoji padrao.png" alt="Submit"> -->
-            <textarea class="mensagemUsuario" cols="30" rows="2" placeholder="Escreva uma mensagem"></textarea>
+            <textarea id="mensagem" class="mensagemUsuario" cols="30" rows="2" placeholder="Escreva uma mensagem"></textarea>
             <input class="enviar" type="button" value="Enviar" onclick="enviarMensagens()">
         </div>
     </div>

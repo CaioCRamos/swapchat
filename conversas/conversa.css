@@ -58,10 +58,16 @@ body{
 }
 
 .conversas{
-    width: 90%;
+    width: 100%;
     justify-content: center;
     height: 4%;
     background: rgba(38, 24, 85, 1);
+}
+
+.detalhe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .pesquisar{
@@ -75,8 +81,36 @@ body{
     border-radius: 5px;
 }
 
+ul{
+    list-style-type: none;
+}
 
+li{
+    display: flex;
+    background-color:rgba(50, 35, 109, 1);
+    border: ;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+}
 
+.imagem{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+.listaConversas{
+    
+    width: 100%;
+    height: 80vh;
+    justify-content: right;
+    overflow: auto;
+}
 
 .caixaDireita{
     width: 65%;
