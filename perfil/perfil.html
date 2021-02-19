@@ -13,24 +13,29 @@
 <body>
     <div id="caixaEsquerda">
         <div id="topo">
-            <img src="../imagens/SwapChat Layouts/arrow/coolicon.png" alt="">
+            <img class="seta" src="../imagens/SwapChat Layouts/arrow/coolicon.png" alt="">
             Perfil
         </div>
         <div id="meio">
             <div id="fotos">
                 <img class="foto" src="../imagens/icone-contato.png" alt="">
-                <p class="aviso">Arquivo em: .jpg, .gif, .png</p><br>
-                <button class="botao">Substituir foto</button>
-
+                <div class="foto-interno">
+                    <p class="aviso">Arquivo em: .jpg, .gif, .png</p>
+                    <br>
+                    <button class="botao">Substituir foto</button>
+                </div>
             </div>
             <div id="dados">
-                <p>Nome do perfil</p>
-                <input type="text" placeholder="pessoal">
-                <p>E-mail</p>
-                <input type="email" name="email" placeholder="pessoal@gmail.com">
-
+                <div class="form-input">
+                    <p>Nome do perfil</p>
+                    <input type="text" class="cadastro" placeholder="pessoal">
+                </div>
+                <div class="form-input">    
+                    <p>E-mail</p>
+                    <input type="email" class="cadastro" name="email" placeholder="pessoal@gmail.com">
+                </div>
                 <div>
-                    <button>Salvar</button>
+                    <button class="botao-salvar">Salvar</button>
                 </div>
 
             </div>
@@ -38,9 +43,7 @@
     </div>
 
     <div id="caixaDaDireita">
-
     </div>
-
 
     <script src="perfil.js"></script>
 </body>
