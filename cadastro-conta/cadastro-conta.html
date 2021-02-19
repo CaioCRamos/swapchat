@@ -16,62 +16,62 @@
         </div>
 
         <div class="voltar">
-            Voltar
+            <a href="../cadastro-usuario/cadastro-usuario.html" style="text-decoration:none"> Voltar</a>
         </div>
     </div>
     <div class="caixa__maior">
         <div class="titulo">
             2.Criação de perfil.
         </div>
-        <form>
-            <div class="form__input" id="nome_perfil_input_1">
+        <div>
+            <div class="form__input">
                 <p class="detalhes__gerais">Nome do Perfil 1</p>
-                <input type="text" class="cadastro" required>
+                <input type="text" class="cadastro" id="nome_perfil_input_1">
             </div>
-            <div class="form__input" id="celuar_input_1">
-                <p class="detalhes__gerais">Celular</p>
-                <input type="text" class="cadastro" placeholder="DDD+número " required>
+            <p class="form--error"> Preencha o campo do nome (perfil 1)</p>
+
+            <div class="form__input">
+                <p class="detalhes__gerais">E-mail</p>
+                <input type="text" class="cadastro" id="email_input_1" >
             </div>
+            <p class="form--error">Preencha o campo do email (perfil 1)</p>
             <div>
                 <p class="texto_adicionar"> Adicionar uma foto: </p>
             </div>
-        </form>
-        <div class="caixa">
-            <img class="foto"
-                src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
-            <button class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()">Enviar foto</button>
-            <p class="substituir" id="substituir_foto" onclick="subistituir()"> substituir foto. </p>
-            <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
-        </div>
-        <form>
-            <div class="form__input" id="nome_perfil_input_1">
+
+            <div class="caixa">
+                <img class="foto" id="imagem_perfil_1"
+                    src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
+                <input type="file" class="texto_adicionar_botao" id="enviar_imagem_perfil_1" onchange="alteraImagemPerfil1()">
+                <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
+            </div>
+
+            <div class="form__input">
                 <p class="detalhes__gerais">Nome do Perfil 2</p>
-                <input type="text" class="cadastro" required>
+                <input type="text" class="cadastro" id="nome_perfil_input_2">
             </div>
-            <div class="form__input" id="celuar_input_1">
-                <p class="detalhes__gerais">Celular</p>
-                <input type="text" class="cadastro" placeholder="DDD+número " required>
+            <p class="form--error">Preencha o campo do nome (perfil 1)</p>
+            <div class="form__input">
+                <p class="detalhes__gerais">E-mail</p>
+                <input type="text" class="cadastro" id="email_input_2" >
             </div>
+            <p class="form--error">Preencha o campo do email (perfil 2)</p>
             <div>
                 <p class="texto_adicionar"> Adicionar uma foto ao perfil 2: </p>
             </div>
 
-        </form>
-        <div class="caixa">
-            <img class="foto"
-                src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
-            <button class="texto_adicionar_botao" id="botao_enviar" onclick="adicionar()">Enviar foto</button>
-            <p class="substituir" id="substituir_foto" onclick="subistituir()"> substituir foto. </p>
-            <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
-        </div>
 
-        <div class="form__button ">
-            <button class="botao__concluir" onclick="continuar()"><a href="../cadastro-finalizacao/cadastro-finalizacao.html"
-                    style="text-decoration:none">Concluir </a></button>
+            <div class="caixa">
+                <img class="foto" id="imagem_perfil_2"
+                    src="https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png">
+                <input type="file" class="texto_adicionar_botao" id="enviar_imagem_perfil_2" onchange="alteraImagemPerfil2()">
+                <p class="arquivo"> Arquivo em: .jpg, .gif, .png</p>
+            </div>
+            <div class="form__button ">
+                <button class="botao__concluir" onclick="continuar()">Concluir</button>
+            </div>
         </div>
     </div>
-
-
 
 
 

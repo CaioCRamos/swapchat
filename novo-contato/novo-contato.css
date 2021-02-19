@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    align-items: left;
+
+}
+
+.bloco_inteiro {
+    display: flex;
+    width:25vw;
+    height: 100vh;
+    flex-direction: column;
+    float: left;
+}
+
+.lado_esquerdo {
+    height: 13vh;
+    background: #32236D;
+    align-items: left;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+}
+
+.voltar{
+    display: flex;
+    align-items: center;
+    height: 13vh;
+}
+
+.texto_contato {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    height: 13vh;
+    flex:1;
+    display: flex;
+    align-items:center ; 
+    justify-content: center;
+
+}
+
+.quadro_menor {
+    height: 87vh;
+    background: #261855;
+}
+
+.form {
+    padding: 0.5rem ;
+}
+
+
+.form__input {
+    display: flex;
+    height: 40px;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.detalhes__gerais {
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+}
+
+.contato_novo {
+    border-radius: 4px;
+    height: 30px;
+    border: #FFFFFF;
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 4%;
+}
+
+
+.texto_adicionar_botao {
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #32236D;
+    border-radius: 5px;
+
+}
+
+#botao_adicionar {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 120%;
+    height: 90%;
+    align-items: center;
+    margin-left: 70%;
+    margin-top: -20%;
+    display: flex;
+    padding-left: 20%;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.botao__cadastrar {
+    background: #FF276F;
+    border-radius: 6px;
+    width: 154px;
+    height: 50px;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 80px #FF276F;
+    border: #FF276F;
+    top: 70%;
+}
+
+a {
+    color: #FFFFFF;
+}
+.area_restante{
+    width:75vw;
+}
