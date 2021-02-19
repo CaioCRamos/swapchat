@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo-geral.css">
+    <link rel="stylesheet" href="./conversa.css">
+    <title>Conversa</title>
+</head>
+
+<body>
+    <div class="caixaEsquerda">
+        <div class="caixa-topo">
+            <div class="caixatopoEsquerda">
+                <div class="perfil1">
+                    <img class="foto1" src="../imagens/perfilPadrao.jpg">
+                </div>
+                <div class="configs">
+                    <img src="../imagens/options.png">
+                </div>
+                <div class="perfil2">
+                    <img class="foto1" src="../imagens/perfilPadrao.jpg">
+                </div>
+            </div>
+            <div class="caixatopoDireita">
+                <div class="perfis">
+                    <img src="../imagens/user.png">
+                </div>
+                <div class="contatos">
+                    <img src="../imagens/Invite.png">
+                </div>
+                <div class="novaConversa">
+                    <img src="../imagens/new chat.png">
+                </div>
+            </div>
+        </div>
+        <div class="conversas">
+            <template id="modeloConversa">
+                <li onclick="mostrarConversa(this)">
+                    <input type="hidden" class="id">
+                    <img class="imagem" src="../imagens/perfilPadrao.jpg" alt="">
+                    <div class="detalhe">
+                        <span class="nome"></span>
+                        <span class="ultimaMensagem"></span>
+                    </div>
+                </li>
+            </template>
+            <ul id="listaConversas" class="listaConversas">
+                
+            </ul>
+        </div>
+    </div>
+    <div class="caixaDireita">
+        <div class="usuarioConversa">
+
+        </div>
+        <div class="chat">
+            <ul id="mensagens" class="mensagens1">
+
+
+            </ul>
+            <!--
+            <div class="mensagemRecebida">
+            
+            </div>
+            <div class="mensagemEnviada">
+                <ul class="mensagem">
+                    <li class="batatinha">Batata promoçao</li>
+                </ul>
+            </div>
+            -->
+        </div>
+        <div id="texto" class="campo">
+            <!-- <input class="emoji" type="image" src="..//imagens/emoji padrao.png" alt="Submit"> -->
+            <textarea id="mensagem" class="mensagemUsuario" cols="30" rows="2" placeholder="Escreva uma mensagem"></textarea>
+            <input class="enviar" type="button" value="Enviar" onclick="enviarMensagens()">
+        </div>
+    </div>
+    <script src="./conversa.js"></script>
+</body>
+
+</html>
