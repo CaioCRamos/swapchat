@@ -21,8 +21,7 @@ async function entrar() {
     //404 significa ERRO
     if (resposta.status === 200) {
         localStorage.setItem("token", respostaJson.token);
-        //window.location.href = "../mensagens/mensagens.html";
-        alert(`Usuário ${respostaJson.nome} logado com sucesso!`);
+        window.location.href = "../conversas/conversa.html";
     } else {
         var erros = document.getElementsByClassName("form--error");
         for (var contador = 0; erros.length; contador++) {
