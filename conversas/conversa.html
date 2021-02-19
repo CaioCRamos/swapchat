@@ -14,13 +14,17 @@
         <div class="caixa-topo">
             <div class="caixatopoEsquerda">
                 <div class="perfil1">
-                    <img class="foto1" src="../imagens/perfilPadrao.jpg">
+                    <img id="imagemPerfil1" class="fotoNaoSelecionada" src="../imagens/perfilPadrao.jpg"
+                        onclick="selecionarConta1()">
+                    <!-- <input id="idPerfil1" type="hidden"> -->
                 </div>
                 <div class="configs">
                     <img src="../imagens/options.png">
                 </div>
                 <div class="perfil2">
-                    <img class="foto1" src="../imagens/perfilPadrao.jpg">
+                    <img id="imagemPerfil2" class="fotoNaoSelecionada" src="../imagens/perfilPadrao.jpg"
+                        onclick="selecionarConta2()">
+                    <!-- <input id="idPerfil2" type="hidden"> -->
                 </div>
             </div>
             <div class="caixatopoDireita">
@@ -29,9 +33,6 @@
                 </div>
                 <div class="contatos">
                     <img src="../imagens/Invite.png">
-                </div>
-                <div class="novaConversa">
-                    <img src="../imagens/new chat.png">
                 </div>
             </div>
         </div>
@@ -47,7 +48,7 @@
                 </li>
             </template>
             <ul id="listaConversas" class="listaConversas">
-                
+
             </ul>
         </div>
     </div>
@@ -56,25 +57,23 @@
 
         </div>
         <div class="chat">
-            <ul id="mensagens" class="mensagens1">
-
-
+            <ul id="mensagens" class="mensagens">
+                <li class="mensagemUsuario1">
+                    <p class="mensagem">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </li>
+                <li class="mensagemUsuario2">
+                    <p class="mensagem">
+                        testelksdflaçsdjfsdalçfjdsaçfjda
+                    </p>
+                </li>
             </ul>
-            <!--
-            <div class="mensagemRecebida">
-            
-            </div>
-            <div class="mensagemEnviada">
-                <ul class="mensagem">
-                    <li class="batatinha">Batata promoçao</li>
-                </ul>
-            </div>
-            -->
         </div>
         <div id="texto" class="campo">
-            <!-- <input class="emoji" type="image" src="..//imagens/emoji padrao.png" alt="Submit"> -->
-            <textarea id="mensagem" class="mensagemUsuario" cols="30" rows="2" placeholder="Escreva uma mensagem"></textarea>
-            <input class="enviar" type="button" value="Enviar" onclick="enviarMensagens()">
+            <textarea id="mensagem" class="mensagemUsuario" cols="30" rows="2"
+                placeholder="Escreva uma mensagem"></textarea>
+            <input class="enviar" type="button" value="Enviar" onclick="enviarMensagem()">
         </div>
     </div>
     <script src="./conversa.js"></script>

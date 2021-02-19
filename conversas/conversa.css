@@ -33,9 +33,18 @@ body{
     margin: auto;
 }
 
-.foto1{
+.fotoSelecionada{
     width: 60px;
     border-radius: 50%;
+    border: 3px solid #FF276F;
+    cursor: pointer;
+}
+
+.fotoNaoSelecionada{
+    width: 60px;
+    border-radius: 50%;
+    opacity: 60%;
+    cursor: pointer;
 }
 
 .configs{
@@ -47,10 +56,12 @@ body{
 
 .perfis{
     margin-right: 3vh;
+    cursor: pointer;
 }
 
 .contatos{
     margin-right: 3vh;
+    cursor: pointer;
 }
 
 .novaConversa{
@@ -85,10 +96,9 @@ ul{
     list-style-type: none;
 }
 
-li{
+.listaConversas li{
     display: flex;
-    background-color:rgba(50, 35, 109, 1);
-    border: ;
+    background-color:rgba(50, 35, 109, 1);    
     width: 100%;
     cursor: pointer;
     padding-top: 10px;
@@ -104,8 +114,7 @@ li{
     height: 55px;
 }
 
-.listaConversas{
-    
+.listaConversas {    
     width: 100%;
     height: 80vh;
     justify-content: right;
@@ -134,6 +143,44 @@ li{
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+.mensagens {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 5px;
+}
+
+.mensagemUsuario1 {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2px;
+}
+
+.mensagemUsuario2 {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 2px;
+}
+
+.mensagem{
+    border-radius: 30px;
+    display: flex;
+    min-height: 55px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    max-width: 60%;
+}
+
+.mensagemUsuario1 p {
+    background-color: #3EBCB4;
+}
+
+.mensagemUsuario2 p {
+    background-color: #32236D;
+    ;
 }
 
 .campo{
