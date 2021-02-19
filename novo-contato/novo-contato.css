@@ -1,12 +1,11 @@
 body {
     display: flex;
     align-items: left;
-
 }
 
 .bloco_inteiro {
     display: flex;
-    width:25vw;
+    width: 25vw;
     height: 100vh;
     flex-direction: column;
     float: left;
@@ -23,7 +22,7 @@ body {
     flex-direction: row;
 }
 
-.voltar{
+.voltar {
     display: flex;
     align-items: center;
     height: 13vh;
@@ -34,11 +33,10 @@ body {
     font-weight: 500;
     font-size: 24px;
     height: 13vh;
-    flex:1;
+    flex: 1;
     display: flex;
-    align-items:center ; 
+    align-items: center;
     justify-content: center;
-
 }
 
 .quadro_menor {
@@ -47,9 +45,8 @@ body {
 }
 
 .form {
-    padding: 0.5rem ;
+    padding: 0.5rem;
 }
-
 
 .form__input {
     display: flex;
@@ -73,13 +70,20 @@ body {
     padding-left: 4%;
 }
 
+.form--error {
+    display: none;
+    color: #FF6363;
+    font-size: 16px;
+    Opacity: 50%;
+    text-align: right;
+    font-style: italic;
+}
 
 .texto_adicionar_botao {
     font-size: 18px;
     color: #FFFFFF;
     background: #32236D;
     border-radius: 5px;
-
 }
 
 #botao_adicionar {
@@ -115,6 +119,7 @@ body {
 a {
     color: #FFFFFF;
 }
-.area_restante{
-    width:75vw;
+
+.area_restante {
+    width: 75vw;
 }

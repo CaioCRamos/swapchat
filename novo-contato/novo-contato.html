@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,39 +10,46 @@
     <title>swapchat</title>
 
 </head>
+
 <body>
     <div class="bloco_inteiro">
         <div class="lado_esquerdo">
             <div class="contatos">
                 <div class="voltar">
-                    <a href="../contatos/contatos.html"><img class="imagem_seta" src="../imagens/seta-novo-contato.png"></a>
+                    <a href="../contatos/contatos.html"><img class="imagem_seta"
+                            src="../imagens/seta-novo-contato.png"></a>
                 </div>
                 <div class="texto_contato">
-                   Novo Contato
+                    Novo Contato
                 </div>
             </div>
         </div>
         <div class="quadro_menor">
             <div class="form">
-                <div class="form__input" id="nome">
+                <div class="form__input" >
                     <p class="detalhes__gerais">Nome </p>
-                    <input type="text" class="contato_novo"> 
+                    <input type="text" id="nome"class="contato_novo">
                 </div>
-                <div class="form__input" id="celular">
+                <p class="form--error">Preencha o campo com o seu nome</p>
+
+                <div class="form__input" >
                     <p class="detalhes__gerais">Celular</p>
-                    <input type="tel" class="contato_novo" placeholder="DDD+número" >
+                    <input type="tel" class="contato_novo" id="celular" placeholder="DDD+número">
                 </div>
+                <p class="form--error">Preencha o campo com seu celular</p>
+
                 <div class="form__button ">
                     <button class="botao__cadastrar" onclick="cadastrar()">Cadastrar </button>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <div class="area_restante"></div>
 
 
 
-   <script src="novo-contato.js"></script> 
+    <script src="novo-contato.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,7 @@ async function cadastrar() {
     var nome = document.getElementById("nome").value;
     var celular = document.getElementById("celular").value;
 
+    debugger;
 
     if (nome !== "" && celular !== "") {
         var corpoJson = {
@@ -13,16 +14,19 @@ async function cadastrar() {
             body: JSON.stringify(corpoJson),
             headers: {
                 'Content-Type': 'application/json',
-                "x-access-token": localStorage.getItem("token")
+                // "x-access-token": localStorage.getItem("token")
             }
         });
         if (resposta.status === 201) {
-            localStorage.setItem("id", respostaJson.id);
             alert(respostaJson.mensagem);
-            window.location.href = "../cadastro-conta/cadastro-conta.html";
+            window.location.href = "../contatos/contatos.html";
         }
-    } else if (resposta.status === 400) {
-        alert(respostaJson.mensagem);
+    } else {
+        var erros = document.getElementsByClassName("form--error");
+        for (var contador = 0; contador < erros.length; contador++) {
+            erros[contador].style.display = "block";
 
+
+        }
     }
 }
