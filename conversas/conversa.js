@@ -1,6 +1,9 @@
 window.onload = async function () {
     listarContas();
     await selecionarConta1();
+
+    setInterval(listarConversas, 5000);
+    setInterval(listarMensagens, 5000);
 }
 
 function listarContas() {
@@ -53,7 +56,7 @@ async function listarConversas() {
         headers: {
             "x-access-token": localStorage.getItem("token")
         }
-    }) 
+    })
 
     var conversas = await resposta.json();
 
@@ -79,43 +82,44 @@ async function listarConversas() {
     }
 }
 
-var mensagens = [
-    {
-        usuario: "usuario1",
-        mensagem: "eae mano"
-    },
-    {
-        usuario: "usuario1",
-        mensagem: "tudo certo"
-    },
-    {
-        usuario: "usuario2",
-        mensagem: "to de boas"
-    },
-    {
-        usuario: "usuario1",
-        mensagem: "show"
-    },
-]
-
-function mostrarConversa(li) {
+async function selecionarConversa(li) {
     var id = li.querySelector(".id").value;
-        
-    //peguei as mensagens existentes na API
-    listarMensagens();
-   
+    var nome = li.querySelector(".nome").value;
+
+    localStorage.setItem("idConversaSelecionada", id);
+    localStorage.setItem("nomeConversaSelecionada", nome);
+
+    await listarMensagens();
 }
 
-function listarMensagens(){
+async function listarMensagens() {
+    if (localStorage.getItem("idConversaSelecionada") === "")
+        return;
+
+    document.getElementById("nomeConversa").value = localStorage.getItem("nomeConversaSelecionada");
+
+    var url = "https://swapchat-api.herokuapp.com/v1/chats/messages/"
+        + localStorage.getItem("idConversaSelecionada")
+        + "/" + localStorage.getItem("idContaSelecionada");
+
+    var resposta = await fetch(url, {
+        method: "GET",
+        headers: {
+            "x-access-token": localStorage.getItem("token")
+        }
+    });
+
+    var mensagens = await resposta.json();
+
     listaMensagens = document.getElementById("mensagens");
     listaMensagens.innerHTML = "";
 
-    for(var contador = 0; contador < mensagens.length; contador ++) {
+    for (var contador = 0; contador < mensagens.length; contador++) {
         var novoLi = document.createElement("li");
-        
-        if (mensagens[contador].usuario === "usuario1"){
+
+        if (mensagens[contador].usuario === "usuario1") {
             novoLi.classList.add("mensagemUsuario1");
-        }else{
+        } else {
             novoLi.classList.add("mensagemUsuario2");
         }
 
@@ -128,13 +132,29 @@ function listarMensagens(){
     }
 }
 
-function enviarMensagem(){
+async function enviarMensagem() {
+    debugger
     var mensagem = document.getElementById("mensagem").value;
-    mensagens.push({
-        usuario: "usuario1",
+
+    var url = "https://swapchat-api.herokuapp.com/v1/chats/messages";
+
+    var envioMensagem = {
+        idConversa: localStorage.getItem("idConversaSelecionada"),
+        idContaUsuario: localStorage.getItem("idContaSelecionada"),
         mensagem: mensagem
+    };
+
+    var resposta = await fetch(url, {
+        method: "POST",
+        body:JSON.stringify(envioMensagem),
+        headers: {
+            'Content-Type': 'application/json',
+            "x-access-token": localStorage.getItem("token")
+        }
     });
-    listarMensagens();
     
-    document.getElementById("mensagem").value = "";
- }
+    if(resposta.status === 200){
+        listarMensagens();
+        document.getElementById("mensagem").value = "";
+    }
+}
