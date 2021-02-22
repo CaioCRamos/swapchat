@@ -29,16 +29,16 @@
             </div>
             <div class="caixatopoDireita">
                 <div class="perfis">
-                    <img src="../imagens/user.png">
+                    <a href="../perfil/perfil.html"><img src="../imagens/user.png"></a>
                 </div>
                 <div class="contatos">
-                    <img src="../imagens/Invite.png">
+                    <a href="../contatos/contatos.html"><img src="../imagens/Invite.png"></a>
                 </div>
             </div>
         </div>
         <div class="conversas">
             <template id="modeloConversa">
-                <li onclick="mostrarConversa(this)">
+                <li onclick="selecionarConversa(this)">
                     <input type="hidden" class="id">
                     <img class="imagem" src="../imagens/perfilPadrao.jpg" alt="">
                     <div class="detalhe">
@@ -54,20 +54,14 @@
     </div>
     <div class="caixaDireita">
         <div class="usuarioConversa">
-
+            <img class="imagem" src="../imagens/perfilPadrao.jpg" alt="">
+            <div class="detalhe">
+                <span class="nome" id="nomeConversa">Caio Ramos</span>
+                <span class="status">Online</span>
+            </div>
         </div>
         <div class="chat">
             <ul id="mensagens" class="mensagens">
-                <li class="mensagemUsuario1">
-                    <p class="mensagem">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </li>
-                <li class="mensagemUsuario2">
-                    <p class="mensagem">
-                        testelksdflaçsdjfsdalçfjdsaçfjda
-                    </p>
-                </li>
             </ul>
         </div>
         <div id="texto" class="campo">
