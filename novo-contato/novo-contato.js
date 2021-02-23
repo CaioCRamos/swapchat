@@ -4,7 +4,7 @@ async function cadastrar() {
     var idContaUsuario = localStorage.getItem("idContaSelecionada");
 
     debugger;
-
+    document.getElementsByClassName("botao__cadastrar").disabled = true; // desabilitar o botão.
     if (nome !== "" && celular !== "") {
         var corpoJson = {
             idContaUsuario:idContaUsuario,
@@ -19,25 +19,9 @@ async function cadastrar() {
                 "x-access-token": localStorage.getItem("token")
             }
         });
-        //  //desabilita o botão no início
-        //  document.getElementById("botao__cadastrar").disabled = true;
-
-        //  //cria um event listener que escuta mudanças no input
-        //  document.getElementsByClassName("contato_novo").addEventListener("contato_novo", function (event) {
- 
-        //      //busca conteúdo do input
-        //      var conteudo = document.getElementsByClassName("contato_novo").value;
- 
-        //      //valida conteudo do input 
-        //      if (conteudo !== null && conteudo !== '') {
-        //          //habilita o botão
-        //          document.getElementById("botao__cadastrar").disabled = false;
-        //      } else {
-        //          //desabilita o botão se o conteúdo do input ficar em branco
-        //          document.getElementById("botao__cadastrar").disabled = true;
-        //      }
-        //  });
+      
         if (resposta.status === 201) {
+            document.getElementsByClassName("botao__cadastrar").disabled = false; //habilitar botão.
             var respostaJson =  await resposta.json()
             alert(respostaJson.mensagem);
             window.location.href = "../contatos/contatos.html";

@@ -5,7 +5,7 @@ async function continuar() {
     var pergunta = document.getElementById("caixa_pergunta").value;
     var resposta = document.getElementById("resposta_input").value;
 
-
+    document.getElementsByClassName("botao__continuar").disabled = true; // desabilitar o botão.
     if (nome !== "" && celular !== "" && senha !== "" && pergunta !== "" && resposta !== "") {
         var corpoJson = {
             nome: nome,
@@ -29,6 +29,7 @@ async function continuar() {
             localStorage.setItem("id", respostaJson.id);
             alert(respostaJson.mensagem);
             window.location.href = "../cadastro-conta/cadastro-conta.html";
+            //document.getElementsByClassName("botao__continuar").disabled = false; // habilitar o botão.
         }
     } else {
         var erros = document.getElementsByClassName("form--error");

@@ -44,6 +44,7 @@ body {
 .quadro_menor {
     height: 87vh;
     background: #261855;
+    overflow: auto;
 }
 
 .novo_contato {
