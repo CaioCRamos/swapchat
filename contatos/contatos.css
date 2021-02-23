@@ -5,24 +5,24 @@ body {
 
 .bloco_inteiro {
     display: flex;
-    width:25vw;
+    width: 35vw;
     height: 100vh;
     flex-direction: column;
     float: left;
 }
 
 .lado_esquerdo {
-   height: 13vh;
+    height: 13vh;
     background: #32236D;
     align-items: left;
-    
 }
 
 .contatos {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
 }
-.voltar{
+
+.voltar {
     display: flex;
     align-items: center;
     height: 13vh;
@@ -33,9 +33,9 @@ body {
     font-weight: 500;
     font-size: 24px;
     height: 13vh;
-    flex:1;
+    flex: 1;
     display: flex;
-    align-items:center ; 
+    align-items: center;
     justify-content: center;
 }
 
@@ -65,13 +65,13 @@ body {
     width: 35px;
     height: 15px;
 }
+
 a {
     color: #FFFFFF;
 }
+
 .texto_novo_contato {
-    
     padding-left: 10%;
-   
 }
 
 .contato-fixo {
@@ -79,9 +79,9 @@ a {
     padding: 0.5em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-
 }
-.area_icone_contato{
+
+.area_icone_contato {
     display: flex;
     align-items: center;
 }
@@ -99,15 +99,16 @@ a {
     flex-direction: column;
     margin-left: 0.5rem;
 }
-.detalhe-nome{
+
+.detalhe-nome {
     font-size: 20px;
 }
 
 .detalhe-telefone {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
-    
 }
-.area_restante{
-    width:75vw;
+
+.area_restante {
+    width: 75vw;
 }

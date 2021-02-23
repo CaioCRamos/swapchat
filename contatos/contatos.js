@@ -57,7 +57,7 @@ async function selecionarContato(li) {
         }
     });
     if (resposta.status === 201) {
-        window.location.href = "../conversas/conversa.html";
+        window.location.href = "../conversas/conversas.html";
     }
 }
 
