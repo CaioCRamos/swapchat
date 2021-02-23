@@ -78,8 +78,6 @@ async function listarConversas() {
         conversa.querySelector(".ultimaMensagem").innerText = ultimaMensagem;
         conversa.querySelector(".id").value = id;
 
-        conversa.querySelector(".nomeConversa").innerText = nome;
-
         listaConversas.appendChild(conversa);
     }
 }
