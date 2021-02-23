@@ -8,7 +8,7 @@ async function continuar() {
     var email2 = document.getElementById("email_input_2").value;
 
     debugger;
-
+    document.getElementsByClassName("botao__concluir").disabled = true; // desabilitar o botão.
     if (nome1 !== "" && email1 !== "" && nome2 !== "" && email2 !== "") {
         var corpoJson = {
             id: localStorage.getItem("id"),
@@ -38,6 +38,8 @@ async function continuar() {
         if (resposta.status === 200) {
             alert(respostaJson.mensagem);
             window.location.href = "../cadastro-finalizacao/cadastro-finalizacao.html";
+            //document.getElementsByClassName("botao__concluir").disabled = true; // habilitar o botão.
+            
         }
     } else {
         var erros = document.getElementsByClassName("form--error");

@@ -4,7 +4,7 @@ async function cadastrar() {
     var idContaUsuario = localStorage.getItem("idContaSelecionada");
 
     debugger;
-
+    document.getElementsByClassName("botao__cadastrar").disabled = true; // desabilitar o botão.
     if (nome !== "" && celular !== "") {
         var corpoJson = {
             idContaUsuario:idContaUsuario,
@@ -19,7 +19,9 @@ async function cadastrar() {
                 "x-access-token": localStorage.getItem("token")
             }
         });
+      
         if (resposta.status === 201) {
+            document.getElementsByClassName("botao__cadastrar").disabled = false; //habilitar botão.
             var respostaJson =  await resposta.json()
             alert(respostaJson.mensagem);
             window.location.href = "../contatos/contatos.html";
