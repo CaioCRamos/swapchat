@@ -2,8 +2,8 @@ window.onload = async function () {
     listarContas();
     await selecionarConta1();
 
-    setInterval(listarConversas, 5000);
-    setInterval(listarMensagens, 5000);
+    setInterval(listarConversas, 5000); //5 seg
+    setInterval(listarMensagens, 5000); //5 seg
 }
 
 async function listarContas() {
@@ -11,10 +11,10 @@ async function listarContas() {
     var conta2 = JSON.parse(localStorage.getItem("conta2"));
 
     var imagemPerfil1 = document.getElementById("imagemPerfil1");
-    // imagemPerfil1.src = conta1.imagem;
+    imagemPerfil1.src = conta1.imagem;
 
     var imagemPerfil1 = document.getElementById("imagemPerfil2");
-    // imagemPerfil2.src = conta2.imagem;
+    imagemPerfil2.src = conta2.imagem;
 }
 
 async function selecionarConta1() {
@@ -72,7 +72,6 @@ async function listarConversas() {
         var id = conversas[contador].id;
 
         var conversa = modelo.content.cloneNode(true);
-
         conversa.querySelector(".nome").innerText = nome;
         conversa.querySelector(".imagem").src = imagem;
         conversa.querySelector(".ultimaMensagem").innerText = ultimaMensagem;
@@ -84,7 +83,7 @@ async function listarConversas() {
 
 async function selecionarConversa(li) {
     var id = li.querySelector(".id").value;
-    var nome = li.querySelector(".nome").value;
+    var nome = li.querySelector(".nome").innerText;
 
     localStorage.setItem("idConversaSelecionada", id);
     localStorage.setItem("nomeConversaSelecionada", nome);
@@ -96,7 +95,7 @@ async function listarMensagens() {
     if (localStorage.getItem("idConversaSelecionada") === "")
         return;
 
-    document.getElementById("nomeConversa").value = localStorage.getItem("nomeConversaSelecionada");
+    document.getElementById("nomeConversa").innerText = localStorage.getItem("nomeConversaSelecionada");
 
     var url = "https://swapchat-api.herokuapp.com/v1/chats/messages/"
         + localStorage.getItem("idConversaSelecionada")
@@ -146,14 +145,14 @@ async function enviarMensagem() {
 
     var resposta = await fetch(url, {
         method: "POST",
-        body:JSON.stringify(envioMensagem),
+        body: JSON.stringify(envioMensagem),
         headers: {
             'Content-Type': 'application/json',
             "x-access-token": localStorage.getItem("token")
         }
     });
-    
-    if(resposta.status === 200){
+
+    if (resposta.status === 200) {
         listarMensagens();
         document.getElementById("mensagem").value = "";
     }
