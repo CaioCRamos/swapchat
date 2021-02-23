@@ -45,6 +45,7 @@ body{
     border-radius: 50%;
     opacity: 60%;
     cursor: pointer;
+    align-items: center;
 }
 
 #imagemPerfil1{
