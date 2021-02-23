@@ -6,7 +6,7 @@ window.onload = async function () {
     setInterval(listarMensagens, 5000);
 }
 
-function listarContas() {
+async function listarContas() {
     var conta1 = JSON.parse(localStorage.getItem("conta1"));
     var conta2 = JSON.parse(localStorage.getItem("conta2"));
 
