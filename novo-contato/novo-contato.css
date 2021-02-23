@@ -26,6 +26,7 @@ body {
     display: flex;
     align-items: center;
     height: 13vh;
+    margin-left:30px ;
 }
 
 .texto_contato {
