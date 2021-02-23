@@ -51,7 +51,7 @@ async function entrar() {
         localStorage.setItem("conta2", JSON.stringify(conta2));
         localStorage.setItem("token", respostaJson.token);
 
-        window.location.href = "../conversas/conversa.html";
+        window.location.href = "../conversas/conversas.html";
     } else {
         var erros = document.getElementsByClassName("form--error");
         for (var contador = 0; erros.length; contador++) {
