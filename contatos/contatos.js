@@ -56,6 +56,7 @@ async function selecionarContato(li) {
             "x-access-token": localStorage.getItem("token")
         }
     });
+    
     if (resposta.status === 201) {
         window.location.href = "../conversas/conversas.html";
     }
