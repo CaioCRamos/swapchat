@@ -2,12 +2,13 @@ var imagem1;
 var imagem2;
 
 async function continuar() {
+    mostrarLoading();
+
     var nome1 = document.getElementById("nome_perfil_input_1").value;
     var email1 = document.getElementById("email_input_1").value;
     var nome2 = document.getElementById("nome_perfil_input_2").value;
     var email2 = document.getElementById("email_input_2").value;
 
-    debugger;
     document.getElementsByClassName("botao__concluir").disabled = true; // desabilitar o botão.
     if (nome1 !== "" && email1 !== "" && nome2 !== "" && email2 !== "") {
         var corpoJson = {
@@ -47,6 +48,8 @@ async function continuar() {
             erros[contador].style.display = "block";
         }
     }
+
+    ocultarLoading();
 }
 
 function alteraImagemPerfil1(){

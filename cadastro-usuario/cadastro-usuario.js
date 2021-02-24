@@ -1,4 +1,6 @@
 async function continuar() {
+    mostrarLoading();
+
     var nome = document.getElementById("nome_input").value;
     var celular = document.getElementById("celular_input").value;
     var senha = document.getElementById("senha_input").value;
@@ -38,4 +40,5 @@ async function continuar() {
         }
     }
 
+    ocultarLoading();
 }

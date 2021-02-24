@@ -4,6 +4,8 @@ window.onload = async function () {
 }
 
 async function listarContatos() {
+    mostrarLoading();
+
     var idContaUsuario = localStorage.getItem("idContaSelecionada");
     var resposta = await fetch("https://swapchat-api.herokuapp.com/v1/contacts/" + idContaUsuario, {
         method: "GET",
@@ -35,6 +37,8 @@ async function listarContatos() {
 
         listaContatos.appendChild(novoContato);
     }
+
+    ocultarLoading();
 }
 
 async function selecionarContato(li) {
