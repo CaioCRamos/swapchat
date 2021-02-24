@@ -4,7 +4,7 @@ window.onload = async function () {
     await selecionarConta1();
 
     setInterval(listarConversas, 5000); //5 seg
-    setInterval(listarMensagens, 5000); //5 seg
+    setInterval(listarMensagens, 3000); //5 seg
 }
 
 async function listarContas() {
@@ -77,6 +77,10 @@ async function listarConversas() {
         var id = conversas[contador].id;
 
         var conversa = modelo.content.cloneNode(true);
+        if (id === localStorage.getItem("idConversaSelecionada")) {
+            conversa.children[0].classList.add("conversaSelecionada");
+        }
+
         conversa.querySelector(".nome").innerText = nome;
         conversa.querySelector(".imagem").src = imagem;
         conversa.querySelector(".ultimaMensagem").innerText = ultimaMensagem;
@@ -94,6 +98,8 @@ async function selecionarConversa(li) {
     localStorage.setItem("idConversaSelecionada", id);
     localStorage.setItem("nomeConversaSelecionada", nome);
     localStorage.setItem("imagemConversaSelecionada", imagem);
+
+    li.classList.add("conversaSelecionada");    
 
     await listarMensagens();
 }

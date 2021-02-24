@@ -1,20 +1,19 @@
-div{
+div {
     /* border: red solid 1px; */
     float: left;
 }
 
-body{
-    display:block;
+body {
+    display: block;
 }
 
 .caixaEsquerda {
     width: 35%;
     height: 100%;
     background: rgba(38, 24, 85, 1);
-
 }
 
-.caixa-topo{
+.caixa-topo {
     width: 100%;
     height: 15%;
     padding: 5%;
@@ -23,17 +22,17 @@ body{
     background: rgba(50, 35, 109, 1);
 }
 
-.caixatopoEsquerda{
+.caixatopoEsquerda {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-.caixatopoDireita{
-    margin: auto;
+.caixatopoDireita {
+    margin: auto 0px;
 }
 
-.fotoSelecionada{
+.fotoSelecionada {
     width: 60px;
     border-radius: 50%;
     border: 3px solid #FF276F;
@@ -41,7 +40,7 @@ body{
     cursor: pointer;
 }
 
-.fotoNaoSelecionada{
+.fotoNaoSelecionada {
     width: 60px;
     border-radius: 50%;
     opacity: 60%;
@@ -50,64 +49,62 @@ body{
     height: 60px;
 }
 
-#imagemPerfil1{
+#imagemPerfil1 {
     cursor: pointer;
 }
 
-
-
-.configs{
+.configs {
     margin-top: 17%;
     margin-left: 2px;
     margin-right: 2px;
-    
 }
 
-.perfis{
+.perfis {
     margin-right: 3vh;
     cursor: pointer;
 }
 
-.contatos{
+.contatos {
     margin-right: 3vh;
     cursor: pointer;
 }
 
-.novaConversa{
+.novaConversa {
     margin-right: 1vh;
 }
 
-.conversas{
+.conversas {
     width: 100%;
     justify-content: center;
     height: 4%;
     background: rgba(38, 24, 85, 1);
 }
 
-.detalhe{
+.detalhe {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.pesquisar{
+.pesquisar {
     width: 100%;
     height: 4%;
 }
 
-.barraDePesquisa{
+.barraDePesquisa {
     width: 100%;
     height: 4vh;
     border-radius: 5px;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-.listaConversas li{
+.listaConversas li {
     display: flex;
-    background-color:rgba(50, 35, 109, 1);    
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
     cursor: pointer;
     padding-top: 10px;
@@ -115,7 +112,15 @@ ul{
     align-content: center;
 }
 
-.imagem{
+.conversaSelecionada {
+    background-color: #32236D;
+}
+
+.listaConversas li:hover {
+    background-color: #32236D;
+}
+
+.imagem {
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 50%;
@@ -124,28 +129,28 @@ ul{
     align-self: center;
 }
 
-.nome{
+.nome {
     font-size: 22px;
 }
 
-.ultimaMensagem{
+.ultimaMensagem {
     font-size: 16px;
     opacity: 60%;
 }
 
-.listaConversas {    
+.listaConversas {
     width: 100%;
     height: 80vh;
     justify-content: right;
     overflow: auto;
 }
 
-.caixaDireita{
+.caixaDireita {
     width: 65%;
     height: 100%;
 }
 
-.usuarioConversa{
+.usuarioConversa {
     display: flex;
     width: 100%;
     height: 15%;
@@ -158,7 +163,7 @@ ul{
     opacity: 60%;
 }
 
-.chat{
+.chat {
     display: flex;
     width: 100%;
     height: 75%;
@@ -166,7 +171,6 @@ ul{
     background-image: url(../imagens/logo.png);
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .mensagens {
@@ -188,7 +192,7 @@ ul{
     padding-bottom: 2px;
 }
 
-.mensagem{
+.mensagem {
     border-radius: 30px;
     display: flex;
     min-height: 55px;
@@ -204,42 +208,49 @@ ul{
 
 .mensagemUsuario2 p {
     background-color: #32236D;
-    ;
 }
 
-.campo{
+.campo {
     width: 100%;
     height: 10%;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     background: rgba(50, 35, 109, 1);
-    padding-top: 15px;
 }
 
-.emoji{
+.emoji {
     display: flex;
-    
 }
 
-.enviar{
+.enviar {
     width: 10px;
     height: 50%;
 }
 
-.mensagemRecebida{
+.mensagemRecebida {
     width: 50%;
 }
- .mensagemEnviada{
-    width: 50%;
- }
 
- textarea{
-     width: 80%;
-     height: 50%;
-     border-radius: 5px;
-     padding: 5px;
- }
- 
-.enviar{
+.mensagemEnviada {
+    width: 50%;
+}
+
+textarea {
+    width: 80%;
+    height: 50%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.enviar {
     width: 8%;
+    margin: 10px 10px 10px 0;
+}
+
+.mensagemUsuario {
+    width: 90%;
+    height: 80%;
+    font-family: "Rubik";
+    font-size: 17px;
+    margin: 10px;
 }
