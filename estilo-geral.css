@@ -24,3 +24,7 @@ button{
     src: url(./fonts/Rubik-VariableFont_wght.ttf),
          url(./fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
+
+img {
+    object-fit: cover;
+}

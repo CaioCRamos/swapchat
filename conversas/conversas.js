@@ -1,4 +1,5 @@
 window.onload = async function () {
+    limparDadosConversa();
     listarContas();
     await selecionarConta1();
 
@@ -18,6 +19,8 @@ async function listarContas() {
 }
 
 async function selecionarConta1() {
+    limparDadosConversa();
+
     var conta1 = JSON.parse(localStorage.getItem("conta1"));
     localStorage.setItem("idContaSelecionada", conta1.id);
 
@@ -34,6 +37,8 @@ async function selecionarConta1() {
 }
 
 async function selecionarConta2() {
+    limparDadosConversa();
+
     var conta2 = JSON.parse(localStorage.getItem("conta2"));
     localStorage.setItem("idContaSelecionada", conta2.id);
 
@@ -84,9 +89,11 @@ async function listarConversas() {
 async function selecionarConversa(li) {
     var id = li.querySelector(".id").value;
     var nome = li.querySelector(".nome").innerText;
+    var imagem = li.querySelector(".imagem").src;
 
     localStorage.setItem("idConversaSelecionada", id);
     localStorage.setItem("nomeConversaSelecionada", nome);
+    localStorage.setItem("imagemConversaSelecionada", imagem);
 
     await listarMensagens();
 }
@@ -96,6 +103,9 @@ async function listarMensagens() {
         return;
 
     document.getElementById("nomeConversa").innerText = localStorage.getItem("nomeConversaSelecionada");
+    document.getElementById("imagemConversa").src = localStorage.getItem("imagemConversaSelecionada");
+    document.getElementById("imagemConversa").style.display = "flex";
+    document.getElementById("detalheConversa").style.display = "flex";
 
     var url = "https://swapchat-api.herokuapp.com/v1/chats/messages/"
         + localStorage.getItem("idConversaSelecionada")
@@ -132,7 +142,6 @@ async function listarMensagens() {
 }
 
 async function enviarMensagem() {
-    debugger
     var mensagem = document.getElementById("mensagem").value;
 
     var url = "https://swapchat-api.herokuapp.com/v1/chats/messages";
@@ -156,4 +165,14 @@ async function enviarMensagem() {
         listarMensagens();
         document.getElementById("mensagem").value = "";
     }
+}
+
+function limparDadosConversa() {
+    localStorage.setItem("idConversaSelecionada", "");
+
+    document.getElementById("imagemConversa").style.display = "none";
+    document.getElementById("detalheConversa").style.display = "none";
+
+    document.getElementById("nomeConversa").innerText = "";
+    document.getElementById("mensagens").innerHTML = "";
 }

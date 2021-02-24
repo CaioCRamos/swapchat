@@ -24,24 +24,25 @@ async function listarContatos() {
         var idContato = contatos[contador].id;
 
         var novoContato = modelo.content.cloneNode(true);
-        novoContato.querySelector(".icone_contato").src = imagem;
+
+        if (imagem !== "") {
+            novoContato.querySelector(".icone_contato").src = imagem;
+        } 
+        
         novoContato.querySelector(".detalhe-nome").innerHTML = nome;
         novoContato.querySelector(".detalhe-telefone").innerHTML = celular;
         novoContato.querySelector(".idContato").value = idContato;
-    
+
         listaContatos.appendChild(novoContato);
     }
 }
 
 async function selecionarContato(li) {
-    debugger;
-
     var idContato = li.querySelector(".idContato").value;
-    if (idContato === ""){
+    if (idContato === "") {
         alert("Esse contato não possui conta no swapchat");
         return;
     }
-
 
     var idContaUsuario = localStorage.getItem("idContaSelecionada");
     var corpoJson = {
@@ -56,7 +57,7 @@ async function selecionarContato(li) {
             "x-access-token": localStorage.getItem("token")
         }
     });
-    
+
     if (resposta.status === 201) {
         window.location.href = "../conversas/conversas.html";
     }

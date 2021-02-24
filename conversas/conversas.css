@@ -37,6 +37,7 @@ body{
     width: 60px;
     border-radius: 50%;
     border: 3px solid #FF276F;
+    height: 60px;
     cursor: pointer;
 }
 
@@ -46,6 +47,7 @@ body{
     opacity: 60%;
     cursor: pointer;
     align-items: center;
+    height: 60px;
 }
 
 #imagemPerfil1{
